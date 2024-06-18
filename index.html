@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta 
+      name="description" 
+      content="Официальный сайт Свято-Георгиевского храма | пгт. Афипского."
+    />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style-components/resets.css">
+    <link rel="stylesheet" href="style-components/style.css">
+    <link rel="stylesheet" href="style-components/header.css">
+    <link rel="stylesheet" href="style-components/hero.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <title>Свято-Георгиевский храм | пгт. Афипского</title>
+  </head>
+  <body>
+    <div class="preloader" id="preloader">
+      <div class="preloader-spinner"></div>
+    </div>
+    <!-- END OF PRELOADER -->
+
+    <header class="header" id="header" role="banner">
+      <nav class="nav-menu-container" id="nav-menu-container" role="navigation">
+        <img src="src/images/mobile-nav-image.png" alt="Образ ХРАМA" class="nav-menu-image">
+        <p class="nav-menu-subtitle">Меню</p>
+        <div class="nav-menu-left">
+          <a href="" class="nav-link" id="nav-link">О храме</a>
+          <a href="" class="nav-link" id="nav-link">История</a>
+          <a href="" class="nav-link" id="nav-link">Святыни</a>
+        </div>
+
+        <div class="nav-menu-right">
+          <a href="" class="nav-link" id="nav-link">Новости</a>
+          <a href="" class="nav-link" id="nav-link">Галерея</a>
+          <a href="" class="nav-link" id="nav-link">Контакты</a>
+        </div>
+
+        <!-- Close nav menu btn -->
+        <button type="button" class="close-nav-btn" id="close-nav-btn" title="Закрыть меню">
+          Закрыть
+          <i class="fa-solid fa-xmark" aria-label="Значок закрытия меню"></i>
+        </button>
+      </nav>
+
+      <a href="index.html" class="logo-container">
+        <h2 class="logo-text">Свято-Георгиевский храм</h2>
+        <h2 class="logo-text">пгт. Афипского</h2>  
+      </a>
+
+      <!-- Open nav menu btn -->
+      <button type="button" class="open-nav-btn" id="open-nav-btn" title="Открыть меню">
+        Меню
+        <i class="fa-solid fa-bars" aria-label="Значок выпадающего меню"></i>
+      </button>
+    </header>
+    <!-- END OF HEADER -->
+
+    <main class="main" role="main">
+      <section class="hero-section" aria-label="Основной раздел">
+        <h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, non?
+        </h3>
+        <button type="button" class="btn">read more</button>
+      </section>
+    </main>
+    <!-- END OF MAIN -->
+
+    <button type="button" class="scrollup-btn" id="scrollup-btn" title="Кнопка прокрутки вверх" aria-label="Кнопка прокрутки вверх">
+      Наверх
+      <i class="fa-solid fa-angle-up" aria-label="Значок прокрутки вверх"></i>
+    </button>
+    <!-- END OF SCROLL UP BUTTON -->
+
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
