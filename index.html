@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta 
       name="description" 
-      content="Официальный сайт Свято-Георгиевского храма | пгт. Афипского."
+      content="Добро пожаловать на официальный сайт Свято-Георгиевского храма, пгт. Афипского."
     />
 
     <!-- Favicon -->
@@ -33,8 +33,10 @@
 
     <header class="header" id="header" role="banner">
       <nav class="nav-menu-container" id="nav-menu-container" role="navigation">
-        <img src="src/images/mobile-nav-image.png" alt="Образ ХРАМA" class="nav-menu-image">
+        <img src="src/images/mobile-nav-image.png" alt="Образ ХРАМA" class="nav-menu-image"/>
+
         <p class="nav-menu-subtitle">Меню</p>
+
         <div class="nav-menu-left">
           <a href="" class="nav-link" id="nav-link">О храме</a>
           <a href="" class="nav-link" id="nav-link">История</a>
@@ -47,19 +49,26 @@
           <a href="" class="nav-link" id="nav-link">Контакты</a>
         </div>
 
-        <!-- Close nav menu btn -->
+        <!-- Close mobile nav menu btn -->
         <button type="button" class="close-nav-btn" id="close-nav-btn" title="Закрыть меню">
           Закрыть
           <i class="fa-solid fa-xmark" aria-label="Значок закрытия меню"></i>
         </button>
       </nav>
 
-      <a href="index.html" class="logo-container">
-        <h2 class="logo-text">Свято-Георгиевский храм</h2>
-        <h2 class="logo-text">пгт. Афипского</h2>  
+      <a href="index.html" class="logo-container" title="Логотип" aria-label="Логотип">
+        <div class="logo-icon-container">
+          <i class="fa-solid fa-cross" aria-label="Логотип"></i>
+          <!-- <i class="fa-solid fa-church"></i> -->
+        </div>
+
+        <div class="logo-text-container">
+          <h2 class="logo-text">Свято-Георгиевский храм</h2>
+          <h2 class="logo-text">пгт. Афипского</h2> 
+        </div> 
       </a>
 
-      <!-- Open nav menu btn -->
+      <!-- Open mobile nav menu btn -->
       <button type="button" class="open-nav-btn" id="open-nav-btn" title="Открыть меню">
         Меню
         <i class="fa-solid fa-bars" aria-label="Значок выпадающего меню"></i>
@@ -69,10 +78,24 @@
 
     <main class="main" role="main">
       <section class="hero-section" aria-label="Основной раздел">
-        <h3>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, non?
-        </h3>
-        <button type="button" class="btn">read more</button>
+        <div class="hero-text-container">
+          <h1 class="hero-title">Святой Великомученик и Победоносец Георгий, моли Бога o нас!</h1>
+
+          <p class="hero-text-desc">
+            "Взбранному воеводе и Победоносцу Георгию составим похвалу, яко ходатаю нашему и скорому помощнику: ты же, святый великомучениче, яко имеяй дерзновение ко Господу, от всяких нас бед свободи, да зовем ти: Радуйся, Георгие, великий Победоносче"!
+          </p>
+
+          <a href="" class="hero-btn btn">
+            Узнать больше
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <img src="src/images/hero-img.jpg" alt="Фотография нашего храма" loading="eager" class="hero-image">
+      </section>
+
+      <section class="schedule-section" aria-label="Расписание богослужений">
+        <!-- <h2 class="schedule-title">Расписание богослужений</h2>` -->
       </section>
     </main>
     <!-- END OF MAIN -->
