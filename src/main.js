@@ -22,12 +22,21 @@ function showHeaderAndMain() {
 function toggleNavMenu() {
   const navMenu = document.getElementById('nav-menu-container');
   const navMenuOverlay = document.getElementById('nav-menu-container-overlay');
+  const openNavBtn = document.getElementById('open-nav-btn');
+  const closeNavBtn = document.getElementById('close-nav-btn');
+
+  openNavBtn.addEventListener('click', () => {
+    navMenu.classList.add('show-menu');
+    navMenuOverlay.classList.add('nav-overlay-show');
+  })
+
+  closeNavBtn.addEventListener('click', () => {
+    navMenu.classList.remove('show-menu');
+    navMenuOverlay.classList.remove('nav-overlay-show');
+  })
 
   navMenu.addEventListener('click', (e) => {
-    if (e.target.id === 'open-nav-btn') {
-      navMenu.classList.add('show-menu');
-      navMenuOverlay.classList.add('nav-overlay-show');
-    } else if (e.target.id === 'close-nav-btn' || e.target.classList.contains('nav-link')) {
+    if (e.target.classList.contains('nav-link')) {
       navMenu.classList.remove('show-menu');
       navMenuOverlay.classList.remove('nav-overlay-show');
     }
