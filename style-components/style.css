@@ -4,14 +4,16 @@
 :root {
    /* COLORS */
    --body-color: rgb(238, 238, 238);
-   --header-color: #2c2c2c;
-   --text-color: #535353;
+   --title-color: #2c2c2c;
+   --text-color: rgb(83, 83, 83);
+   --text-color-light: rgb(163, 163, 163);
    --black-color: rgb(0, 0, 0);
-   --calm-black-color: #242424;
+   --calm-black-color: rgb(36, 36, 36);
    --white-color: rgb(255, 255, 255);
-   --gray-color: #535353;
-   --faint-white-color: #d3d3d3;
-   --faint-gray-color: #c1c1c1;
+   --gray-color: rgb(83, 83, 83);
+   --faint-white-color: rgb(211, 211, 211);
+   --faint-gray-color: rgb(193, 193, 193);
+   --container-color: rgb(225, 225, 225);
 
    /* FONT FAMILY */
    --ff-body: 'Montserrat', sans-serif;
@@ -22,7 +24,7 @@
 
    /* FONT SIZE */
    --fs-body-15: .938rem;
-   --fs-body-text: 1rem;
+   --fs-body-text: 1.05rem;
    --fs-navs: 1.07rem;
    --fs-heading-24: 1.5rem;
    --fs-logo: clamp(1.25rem, 1.1620rem + 0.3756vw, 1.5rem);
@@ -32,7 +34,7 @@
    /* SPACING */
    --btn-border-radius: .35rem;
    --btn-padding: clamp(0.65rem, 0.6148rem + 0.1502vw, 0.75rem) clamp(0.69rem, 0.5808rem + 0.4657vw, 1rem);
-   --margin-inline: clamp(0.8rem, -2.4394rem + 13.8216vw, 10rem);
+   --padding-inline: clamp(0.8rem, -2.4394rem + 13.8216vw, 10rem);
    --navs-padding-inline: clamp(0.8rem, -1.3831rem + 9.3146vw, 7rem);
    --border-radius: .45rem;
 
@@ -73,15 +75,14 @@
 
 body {
    background-color: var(--body-color);
-   font-family: var(--ff-body);
+   font-family: var(--ff-navs);
    font-size: var(--fs-body-text);
 }
 
 .main {
    opacity: 0;
    transition: var(--general-transition);
-   margin: clamp(3rem, 1.9437rem + 4.5070vw, 6rem) var(--margin-inline) 
-             clamp(3rem, 1.9437rem + 4.5070vw, 6rem);
+   overflow: hidden;
 }
 
 /* Scrollbar */
@@ -109,7 +110,7 @@ body {
    gap: .5rem;
    font-weight: 500;
    outline: none;
-   padding: clamp(0.5rem, 0.4472rem + 0.2254vw, 0.65rem) clamp(0.5rem, 0.3768rem + 0.5258vw, 0.85rem);
+   padding: .57rem .7rem;
    position: fixed;
    right: .8rem;
    bottom: 12rem;

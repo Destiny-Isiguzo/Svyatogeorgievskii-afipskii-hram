@@ -1,15 +1,12 @@
 // Constants
-const PRELOADER_FADE_OUT_DELAY = 1500;
-const HEADER_MAIN_OPACITY_DELAY = 1400;
 const HEADER_ACTIVE_SCROLL_Y = 40;
 const SCROLL_UP_BTN_SHOW_SCROLL_Y = 1500;
 
+
 // Extracted functions
 
-function addFadeOutClass(element, delay) {
-  setTimeout(() => {
-    element.classList.add('fade-out');
-  }, delay);
+function addFadeOutClass(element) {
+  element.classList.toggle('fade-out', true);
 }
 
 function showHeaderAndMain() {
@@ -22,17 +19,13 @@ function showHeaderAndMain() {
 function toggleNavMenu() {
   const navMenu = document.getElementById('nav-menu-container');
   const navMenuOverlay = document.getElementById('nav-menu-container-overlay');
-  const openNavBtn = document.getElementById('open-nav-btn');
-  const closeNavBtn = document.getElementById('close-nav-btn');
+  const navBtns = document.querySelectorAll('#open-nav-btn, #close-nav-btn');
 
-  openNavBtn.addEventListener('click', () => {
-    navMenu.classList.add('show-menu');
-    navMenuOverlay.classList.add('nav-overlay-show');
-  })
-
-  closeNavBtn.addEventListener('click', () => {
-    navMenu.classList.remove('show-menu');
-    navMenuOverlay.classList.remove('nav-overlay-show');
+  navBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      navMenu.classList.toggle('show-menu');
+      navMenuOverlay.classList.toggle('nav-overlay-show');
+    });
   })
 
   navMenu.addEventListener('click', (e) => {
@@ -44,12 +37,9 @@ function toggleNavMenu() {
 }
 
 function handleScroll() {
-  const header = document.getElementById('header');
-  const scrollUpBtn = document.getElementById('scrollup-btn');
   const scrollY = window.scrollY;
-
-  header.classList.toggle('header-active', scrollY > HEADER_ACTIVE_SCROLL_Y);
-  scrollUpBtn.classList.toggle('scrollup-btn-show', scrollY > SCROLL_UP_BTN_SHOW_SCROLL_Y);
+  document.getElementById('header').classList.toggle('header-active', scrollY > HEADER_ACTIVE_SCROLL_Y);
+  document.getElementById('scrollup-btn').classList.toggle('scrollup-btn-show', scrollY > SCROLL_UP_BTN_SHOW_SCROLL_Y);
 }
 
 function scrollToTop() {
@@ -61,11 +51,14 @@ function scrollToTop() {
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
-  const preloader = document.getElementById('preloader');
-  addFadeOutClass(preloader, PRELOADER_FADE_OUT_DELAY);
-  setTimeout(showHeaderAndMain, HEADER_MAIN_OPACITY_DELAY);
   toggleNavMenu();
 });
+
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  showHeaderAndMain();
+  addFadeOutClass(preloader);
+})
 
 window.addEventListener('scroll', handleScroll);
 document.getElementById('scrollup-btn').addEventListener('click', scrollToTop);

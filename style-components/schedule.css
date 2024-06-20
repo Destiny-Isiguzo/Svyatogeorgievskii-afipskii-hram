@@ -1,0 +1,6 @@
+.schedule-section {
+   background-color: var(--container-color);
+   padding-top: 3rem;
+   padding-inline: var(--padding-inline);
+   /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
