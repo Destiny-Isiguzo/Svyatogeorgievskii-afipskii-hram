@@ -20,7 +20,7 @@
 
 .hero-text-desc {
    color: var(--text-color);
-   font-size: clamp(1rem, 0.9648rem + 0.1502vw, 1.1rem);
+   font-size: 1.055rem;
    font-family: var(--ff-navs);
    font-weight: 500;
    max-width: 34rem;

@@ -1,10 +1,11 @@
 // Constants
-const PRELOADER_FADE_OUT_DELAY = 1300;
-const HEADER_MAIN_OPACITY_DELAY = 1200;
+const PRELOADER_FADE_OUT_DELAY = 1500;
+const HEADER_MAIN_OPACITY_DELAY = 1400;
 const HEADER_ACTIVE_SCROLL_Y = 40;
 const SCROLL_UP_BTN_SHOW_SCROLL_Y = 1500;
 
 // Extracted functions
+
 function addFadeOutClass(element, delay) {
   setTimeout(() => {
     element.classList.add('fade-out');
@@ -20,17 +21,17 @@ function showHeaderAndMain() {
 
 function toggleNavMenu() {
   const navMenu = document.getElementById('nav-menu-container');
-  const openNavBtn = document.getElementById('open-nav-btn');
-  const closeNavBtn = document.getElementById('close-nav-btn');
-
-  openNavBtn.addEventListener('click', () => navMenu.classList.add('show-menu'));
-  closeNavBtn.addEventListener('click', () => navMenu.classList.remove('show-menu'));
+  const navMenuOverlay = document.getElementById('nav-menu-container-overlay');
 
   navMenu.addEventListener('click', (e) => {
-    if (e.target.classList.contains('nav-link')) {
+    if (e.target.id === 'open-nav-btn') {
+      navMenu.classList.add('show-menu');
+      navMenuOverlay.classList.add('nav-overlay-show');
+    } else if (e.target.id === 'close-nav-btn' || e.target.classList.contains('nav-link')) {
       navMenu.classList.remove('show-menu');
+      navMenuOverlay.classList.remove('nav-overlay-show');
     }
-  });
+  })
 }
 
 function handleScroll() {

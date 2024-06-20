@@ -22,8 +22,8 @@
 
    /* FONT SIZE */
    --fs-body-15: .938rem;
-   --fs-body-text: clamp(0.938rem, 0.9162rem + 0.0931vw, 1rem);
-   --fs-navs: 1rem;
+   --fs-body-text: 1rem;
+   --fs-navs: 1.07rem;
    --fs-heading-24: 1.5rem;
    --fs-logo: clamp(1.25rem, 1.1620rem + 0.3756vw, 1.5rem);
    --fs-btn: clamp(0.938rem, 0.8986rem + 0.1683vw, 1.05rem);

@@ -13,6 +13,23 @@
   transition: var(--general-transition);
 }
 
+.nav-menu-container-overlay {
+  background-color: rgba(0 0 0 / .65);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease, visibility .5s ease;
+}
+
+.nav-overlay-show {
+  opacity: 1;
+  visibility: visible;
+}
+
 .nav-menu-container {
   display: flex;
   align-items: center;
@@ -62,6 +79,7 @@
   color: var(--faint-gray-color);
   font-size: var(--fs-navs);
   font-family: var(--ff-body);
+  font-weight: 500;
   transition: var(--general-transition);
 }
 
@@ -74,7 +92,7 @@
   background-color: var(--calm-black-color);
   border-radius: var(--btn-border-radius);
   border: none;
-  color: var(--faint-white-color);
+  color: var(--white-color);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -82,7 +100,7 @@
   font-size: clamp(0.9rem, 0.8824rem + 0.0751vw, 0.95rem);
   font-weight: 500;
   outline: none;
-  padding: .5rem;
+  padding: .57rem .7rem;
   transition: var(--general-transition);
   position: absolute;
   top: 1.5rem;
@@ -90,11 +108,11 @@
 }
 
 .close-nav-btn i {
-  font-size: .8rem;
+  font-size: .87rem;
 }
 
 .close-nav-btn:hover {
-  color: var(--white-color);
+  text-decoration: underline;
 }
 
 
@@ -113,16 +131,12 @@
     transition: var(--general-transition);
     transform: translateX(100%);
   }
-
-  .nav-link {
-    font-weight: 500;
-  }
 }
 
 
 .logo-container {
   display: flex;
-  gap: clamp(0.3rem, 0.2296rem + 0.3005vw, 0.5rem);
+  gap: .5rem;
 }
 
 .logo-icon-container i {
@@ -141,7 +155,7 @@
   background-color: var(--calm-black-color);
   border-radius: var(--btn-border-radius);
   border: none;
-  color: var(--faint-white-color);
+  color: var(--white-color);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -149,16 +163,16 @@
   font-size: clamp(0.9rem, 0.8824rem + 0.0751vw, 0.95rem);
   font-weight: 500;
   outline: none;
-  padding: .5rem;
+  padding: .57rem .7rem;
   transition: var(--general-transition);
 }
 
 .open-nav-btn i {
-  font-size: .8rem;
+  font-size: .87rem;
 }
 
 .open-nav-btn:hover {
-  color: var(--white-color);
+  text-decoration: underline;
 }
 
 .show-menu {
