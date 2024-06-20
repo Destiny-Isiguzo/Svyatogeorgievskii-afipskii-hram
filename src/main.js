@@ -64,6 +64,23 @@ window.addEventListener('scroll', handleScroll);
 document.getElementById('scrollup-btn').addEventListener('click', scrollToTop);
 
 
+// Scroll reveal animation
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 500,
+});
+
+sr.reveal(`.hero-text-container`, {
+  origin: 'left'
+})
+
+sr.reveal(`.hero-image`, {
+  origin: 'right'
+})
+
+
 // Footer year
 const year = document.getElementById('year');
 year.innerText = new Date().getFullYear();
