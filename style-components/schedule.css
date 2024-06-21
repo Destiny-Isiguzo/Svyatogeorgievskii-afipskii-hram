@@ -1,5 +1,4 @@
 .schedule-section {
-   background-color: var(--container-color);
    padding-top: clamp(3rem, 2.6479rem + 1.5023vw, 4rem);
    padding-inline: var(--padding-inline);
    /* font-family: Georgia, 'Times New Roman', Times, serif; */
