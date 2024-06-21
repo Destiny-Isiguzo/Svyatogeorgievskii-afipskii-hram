@@ -14,7 +14,7 @@
 }
 
 .nav-menu-container-overlay {
-  background-color: rgba(0 0 0 / .7);
+  background-color: rgba(0 0 0 / .75);
   position: fixed;
   top: 0;
   left: 0;
@@ -103,8 +103,8 @@
   padding: .57rem .7rem;
   transition: var(--general-transition);
   position: absolute;
-  top: 1.5rem;
-  right: 1rem;
+  top: .95rem;
+  right: 1.08rem;
 }
 
 .close-nav-btn i {
