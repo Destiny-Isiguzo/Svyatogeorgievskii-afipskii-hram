@@ -39,6 +39,10 @@
    gap: clamp(1rem, 0.7535rem + 1.0516vw, 1.7rem);
 }
 
+.hero-btn {
+   color: var(--white-color);
+}
+
 .hero-image {
    border-radius: 1rem;
    height: clamp(23rem, 19.8310rem + 13.5211vw, 32rem);

@@ -66,19 +66,28 @@ document.getElementById('scrollup-btn').addEventListener('click', scrollToTop);
 
 // Scroll reveal animation
 const sr = ScrollReveal({
-  origin: 'top',
+  origin: 'bottom',
   distance: '60px',
   duration: 2500,
-  delay: 500,
+  delay: 400,
 });
 
-sr.reveal(`.hero-text-container`, {
-  origin: 'left'
+sr.reveal(`.schedule-card`, {
+  interval: 100
 })
 
-sr.reveal(`.hero-image`, {
-  origin: 'right'
-})
+
+const scheduleCards = document.querySelectorAll('.schedule-card');
+const date = new Date();
+const dayOfWeek = date.toLocaleString('en-US', { weekday: 'long' });
+
+scheduleCards.forEach((card) => {
+  const dayElement = card.querySelector('.schedule-card-day');
+
+  if (dayElement.innerText === dayOfWeek) {
+    card.classList.add('schedule-card-active');
+  }
+});
 
 
 // Footer year
