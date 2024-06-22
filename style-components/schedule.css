@@ -21,7 +21,6 @@
 .schedule-subtitle {
    color: var(--text-color);
    font-weight: 600;
-   font-style: italic;
    font-size: 1.1rem;
    text-align: center;
    text-decoration: underline;
@@ -39,7 +38,7 @@
    border: .6px solid rgba(0 0 0 / .09);
    display: grid;
    gap: 1.2rem;
-   filter: drop-shadow(0 2px 20px rgba(0 0 0 / .06));
+   filter: drop-shadow(0 2.5px 20px rgba(0 0 0 / .065));
    padding: 1.3rem 1rem;
 }
 

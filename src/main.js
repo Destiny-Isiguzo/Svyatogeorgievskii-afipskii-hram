@@ -64,19 +64,6 @@ window.addEventListener('scroll', handleScroll);
 document.getElementById('scrollup-btn').addEventListener('click', scrollToTop);
 
 
-// Scroll reveal animation
-const sr = ScrollReveal({
-  origin: 'bottom',
-  distance: '60px',
-  duration: 2500,
-  delay: 400,
-});
-
-sr.reveal(`.schedule-card`, {
-  interval: 100
-})
-
-
 const scheduleCards = document.querySelectorAll('.schedule-card');
 const date = new Date();
 const dayOfWeek = date.toLocaleString('en-US', { weekday: 'long' });
@@ -88,6 +75,19 @@ scheduleCards.forEach((card) => {
     card.classList.add('schedule-card-active');
   }
 });
+
+
+// Scroll reveal animation
+const sr = ScrollReveal({
+  origin: 'bottom',
+  distance: '60px',
+  duration: 1500,
+  delay: 500,
+});
+
+sr.reveal(`.schedule-card`, {
+  interval: 110
+})
 
 
 // Footer year

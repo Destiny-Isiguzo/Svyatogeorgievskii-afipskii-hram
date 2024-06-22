@@ -54,7 +54,6 @@
 /* breakpoint 1030px media query */
 @media screen and (max-width: 64.375em) {
    .hero-section {
-      grid-template-columns: 1fr;
       place-items: center;
    }
 }
