@@ -6,7 +6,7 @@
    --body-color: #fff;
    --title-color: #2c2c2c;
    --text-color: rgb(83, 83, 83);
-   --text-color-light: rgb(163, 163, 163);
+   --text-color-light: rgb(231, 231, 231);
    --black-color: rgb(0, 0, 0);
    --calm-black-color: rgb(36, 36, 36);
    --white-color: rgb(255, 255, 255);
@@ -25,11 +25,11 @@
    /* FONT SIZE */
    --fs-body-15: .938rem;
    --fs-body-text: clamp(1.05rem, 1.0430rem + 0.0300vw, 1.07rem);
-   --fs-navs: 1.07rem;
+   --fs-navs: 1.01rem;
    --fs-heading-24: 1.5rem;
    --fs-logo: clamp(1.25rem, 1.1620rem + 0.3756vw, 1.5rem);
    --fs-btn: clamp(0.938rem, 0.8986rem + 0.1683vw, 1.05rem);
-   --fs-title: clamp(1.5rem, 1.2887rem + 0.9014vw, 2.1rem);
+   --fs-section-title: clamp(1.5rem, 1.2887rem + 0.9014vw, 2.1rem);
 
 
    /* SPACING */
@@ -89,7 +89,6 @@ body {
 /* Scrollbar */
 ::-webkit-scrollbar {
    background-color: rgb(186, 186, 186);
-   border-radius: .5rem;
    width: .6rem;
 }
 

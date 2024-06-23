@@ -1,6 +1,5 @@
 .schedule-section {
-   background-color: var(--container-color);
-   padding-block: clamp(3rem, 2.6479rem + 1.5023vw, 4rem);
+   padding-block: 4rem;
    padding-inline: var(--padding-inline);
 }
 
@@ -9,26 +8,25 @@
    flex-direction: column;
    gap: .5rem;
    margin-bottom: 3.5rem;
+   text-align: center;
 }
 
 .schedule-title {
    color: var(--title-color);
-   font-size: var(--fs-title);
+   font-size: var(--fs-section-title);
    font-family: var(--ff-heading);
-   text-align: center;
 }
 
 .schedule-subtitle {
    color: var(--text-color);
    font-weight: 600;
    font-size: 1.1rem;
-   text-align: center;
    text-decoration: underline;
 }
 
 .schedule-cards-container {
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(clamp(20rem, 18.2394rem + 7.5117vw, 25rem), 1fr));
    gap: 1.2rem;
 }
 
