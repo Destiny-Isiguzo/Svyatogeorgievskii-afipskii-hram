@@ -80,6 +80,15 @@ document.getElementById('scrollup-btn').addEventListener('click', scrollToTop);
 // });
 
 
+scheduleCards.forEach((card) => {
+  const dayElement = card.querySelector('.schedule-card-day');
+
+  if (dayElement.innerText.toLowerCase() === 'sunday' && dayElement.innerText.toLowerCase() === dayOfWeek.toLowerCase()) {
+    card.classList.add('schedule-card-active');
+  }
+});
+
+
 // Scroll reveal animation
 const sr = ScrollReveal({
   origin: 'bottom',

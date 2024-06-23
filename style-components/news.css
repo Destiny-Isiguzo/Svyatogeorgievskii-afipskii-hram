@@ -19,6 +19,6 @@
 
 .news-subtitle {
    color: var(--text-color);
-   font-weight: 600;
-   font-size: 1.1rem;
+   font-weight: 500;
+   font-size: var(--fs-body-text);
 }

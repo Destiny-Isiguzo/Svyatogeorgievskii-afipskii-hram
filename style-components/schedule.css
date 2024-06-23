@@ -19,9 +19,8 @@
 
 .schedule-subtitle {
    color: var(--text-color);
-   font-weight: 600;
-   font-size: 1.1rem;
-   text-decoration: underline;
+   font-weight: 500;
+   font-size: var(--fs-body-text);
 }
 
 .schedule-cards-container {
@@ -58,6 +57,7 @@
 }
 
 .schedule-card-active {
-   background-color: var(--black-color);
+   background-color: red;
    color: var(--white-color);
+   font-weight: 500;
 }
