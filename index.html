@@ -81,6 +81,7 @@
 
     <main class="main" role="main">
       <section class="hero-section" aria-label="Основной раздел">
+        <img src="src/images/hero-img.jpg" alt="Фото нашего храма" loading="eager" class="hero-image">
         <div class="hero-text-container">
           <h1 class="hero-title">Святой Великомученик и Победоносец Георгий, моли Бога o нас!</h1>
 
@@ -105,6 +106,8 @@
           <h2 class="schedule-title">Расписание богослужений</h2>
           
           <p class="schedule-subtitle">Седмица 1-я по Пятидесятнице. Троицкая седмица</p>
+
+          <p class="schedule-current-day-time" id="schedule-current-day-time"></p>
         </div>
 
         <div class="schedule-cards-container">
@@ -173,24 +176,85 @@
           <p class="news-subtitle">Следите за событиями в нашем церковном муниципалитете</p>
         </div>
 
-        <!-- <div class="tab">
-          <button class="tablinks nowActive" onclick="openTab('section1')">Credit Card</button>
-          <button class="tablinks" onclick="openTab('section2')">PayPal</button>
-          <button class="tablinks" onclick="openTab('section3')">Bitcoin</button>
-        </div>
+        <div class="news-card-list-tab-container">
+          <div class="tab">
+            <button type="button" class="tablinks nowActive" onclick="openTab('section1')">Все</button>
 
-        <div id="section1" class="tab-content tab-content1" style="display: block;">
-          <div class="news-card">
-            <img src="" alt="" class="news-card-image">
+            <button type="button" class="tablinks" onclick="openTab('section2')">Мастерская</button>
+
+            <button type="button" class="tablinks" onclick="openTab('section3')">Поддержка СВО</button>
             
-            <h3 class="news-card-title">Воскресная школа для детей</h3>
-  
-            <p class="news-card-text">
-              Воскресная школа для детей работает в обычном режиме. Встречаем 
-              вас в воскресенье в 10:00.
-            </p>
+            <button type="button" class="tablinks" onclick="openTab('section4')">Проповеди</button>
+
+            <button type="button" class="tablinks" onclick="openTab('section5')">Воскресная школа</button>
+
+            <button type="button" class="tablinks" onclick="openTab('section6')">Хор</button>
+
+            <button type="button" class="tablinks" onclick="openTab('section6')">Праздник</button>
           </div>
-        </div> -->
+  
+          <div id="section1" class="tab-content tab-content1" style="display: block;">
+            <div class="news-card">
+              <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
+              
+              <h4 class="news-card-title">ШЬЕМ, ПЛЕТЕМ, ЖДЕМ ВАС</h4>
+    
+              <p class="news-card-text">
+                Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
+              </p>
+
+              <a href="" class="news-card-btn">
+                Читать далее
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="news-card">
+              <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
+              
+              <h4 class="news-card-title">ШЬЕМ, ПЛЕТЕМ, ЖДЕМ ВАС</h4>
+    
+              <p class="news-card-text">
+                Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
+              </p>
+
+              <a href="" class="news-card-btn">
+                Читать далее
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="news-card">
+              <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
+              
+              <h4 class="news-card-title">ШЬЕМ, ПЛЕТЕМ, ЖДЕМ ВАС</h4>
+    
+              <p class="news-card-text">
+                Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
+              </p>
+
+              <a href="" class="news-card-btn">
+                Читать далее
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="news-card">
+              <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
+              
+              <h4 class="news-card-title">ШЬЕМ, ПЛЕТЕМ, ЖДЕМ ВАС</h4>
+    
+              <p class="news-card-text">
+                Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
+              </p>
+
+              <a href="" class="news-card-btn">
+                Читать далее
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <!-- END OF MAIN -->

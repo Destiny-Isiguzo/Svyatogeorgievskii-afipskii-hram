@@ -15,6 +15,7 @@ const scrollY = window.scrollY;
 const scheduleCards = document.querySelectorAll('.schedule-card');
 const date = new Date();
 const dayOfWeek = date.toLocaleString('en-US', { weekday: 'long' });
+const scheduleCurrentDayTimeElement = document.getElementById('schedule-current-day-time');
 const year = document.getElementById('year');
 
 
@@ -46,7 +47,7 @@ function toggleNavMenu() {
 }
 
 function handleScroll() {
-  // document.getElementById('header').classList.toggle('header-active', scrollY > HEADER_ACTIVE_SCROLL_Y);
+  document.getElementById('header').classList.toggle('header-active', scrollY > HEADER_ACTIVE_SCROLL_Y);
   document.getElementById('scrollup-btn').classList.toggle('scrollup-btn-show', scrollY > SCROLL_UP_BTN_SHOW_SCROLL_Y);
 }
 
@@ -87,6 +88,20 @@ scheduleCards.forEach((card) => {
     card.classList.add('schedule-card-active');
   }
 });
+
+
+setInterval(() => {
+  const now = new Date();
+  scheduleCurrentDayTimeElement.textContent = now.toLocaleTimeString('ru-RU', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+  });
+}, 1000);
 
 
 // Scroll reveal animation

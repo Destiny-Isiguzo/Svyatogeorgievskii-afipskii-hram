@@ -21,6 +21,16 @@
    color: var(--text-color);
    font-weight: 500;
    font-size: var(--fs-body-text);
+   margin: auto;
+   width: clamp(20rem, 5.9155rem + 60.0939vw, 60rem);
+}
+
+.schedule-current-day-time {
+   font-style: italic;
+   font-size: .938rem;
+   font-weight: 500;
+   margin-top: .5rem;
+   text-decoration: underline;
 }
 
 .schedule-cards-container {

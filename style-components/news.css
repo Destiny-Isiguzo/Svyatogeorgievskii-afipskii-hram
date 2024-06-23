@@ -7,7 +7,8 @@
    display: flex;
    flex-direction: column;
    gap: .5rem;
-   margin-bottom: 3.5rem;
+   /* margin-bottom: 3.5rem; */
+   margin-bottom: 2.5rem;
    text-align: center;
 }
 
@@ -21,4 +22,25 @@
    color: var(--text-color);
    font-weight: 500;
    font-size: var(--fs-body-text);
+   margin: auto;
+   width: clamp(20rem, 5.9155rem + 60.0939vw, 60rem);
+}
+
+.tab-content {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+   gap: 1.2rem;
+}
+
+.news-card {
+   display: grid;
+   gap: 1.2rem;
+   max-width: 30rem;
+}
+
+.news-card-image {
+   border-radius: var(--border-radius);
+   width: 20rem;
+   height: 15rem;
+   object-fit: cover;
 }
