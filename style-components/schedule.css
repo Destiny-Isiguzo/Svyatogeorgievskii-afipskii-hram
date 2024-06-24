@@ -20,7 +20,7 @@
 .schedule-subtitle {
    color: var(--text-color);
    font-weight: 500;
-   font-size: var(--fs-body-text);
+   font-size: var(--fs-section-subtitle);
    margin: auto;
    width: clamp(20rem, 5.9155rem + 60.0939vw, 60rem);
 }
@@ -54,7 +54,7 @@
 }
 
 .schedule-card-title {
-   font-size: 1.15rem;
+   color: var(--title-color);
 }
 
 .schedule-card-event li {

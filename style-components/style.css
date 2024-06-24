@@ -24,12 +24,13 @@
 
    /* FONT SIZE */
    --fs-body-15: .938rem;
-   --fs-body-text: clamp(1.05rem, 1.0430rem + 0.0300vw, 1.07rem);
+   --fs-body-text: 1.05rem;
    --fs-navs: 1.01rem;
    --fs-heading-24: 1.5rem;
    --fs-logo: clamp(1.25rem, 1.1620rem + 0.3756vw, 1.5rem);
    --fs-btn: clamp(0.938rem, 0.8986rem + 0.1683vw, 1.05rem);
    --fs-section-title: clamp(1.5rem, 1.2887rem + 0.9014vw, 2.1rem);
+   --fs-section-subtitle: 1.1rem;
 
 
    /* SPACING */
@@ -76,7 +77,8 @@
 
 body {
    background-color: var(--body-color);
-   font-family: var(--ff-navs);
+   color: var(--text-color);
+   font-family: var(--ff-prayer);
    font-size: var(--fs-body-text);
 }
 
@@ -116,7 +118,7 @@ body {
    bottom: 12rem;
    z-index: var(--z-tooltip);
    transition: var(--general-transition);
-   transform: translateX(300%);
+   transform: translateX(200%);
 }
 
 .scrollup-btn i {

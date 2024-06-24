@@ -108,11 +108,11 @@ setInterval(() => {
 const sr = ScrollReveal({
   origin: 'bottom',
   distance: '60px',
-  duration: 1500,
-  delay: 500,
+  duration: 1200,
+  delay: 400,
 });
 
-sr.reveal(`.schedule-card`, {
+sr.reveal(`.schedule-card, .news-card`, {
   interval: 110
 })
 

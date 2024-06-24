@@ -1,4 +1,5 @@
 .news-section {
+   background-color: var(--container-color);
    padding-block: 4rem;
    padding-inline: var(--padding-inline);
 }
@@ -7,8 +8,7 @@
    display: flex;
    flex-direction: column;
    gap: .5rem;
-   /* margin-bottom: 3.5rem; */
-   margin-bottom: 2.5rem;
+   margin-bottom: 1.5rem;
    text-align: center;
 }
 
@@ -21,26 +21,99 @@
 .news-subtitle {
    color: var(--text-color);
    font-weight: 500;
-   font-size: var(--fs-body-text);
+   font-size: var(--fs-section-subtitle);
    margin: auto;
    width: clamp(20rem, 5.9155rem + 60.0939vw, 60rem);
 }
 
+.tab-btn-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 1rem;
+   margin-bottom: clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem);
+   overflow: hidden;
+}
+
+.tab-btn {
+   background-color: transparent;
+   border: 1px solid var(--black-color);
+   border-radius: var(--btn-border-radius);
+   color: var(--calm-black-color);
+   cursor: pointer;
+   outline: var(--black-color);
+   padding: .5rem;
+}
+
+.tab-btn-active {
+   background-color: var(--black-color);
+   color: var(--white-color);
+}
+
 .tab-content {
+   display: none;
+}
+
+.news-card-list-container {
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-   gap: 1.2rem;
+   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+   gap: 1.5rem;
 }
 
 .news-card {
-   display: grid;
-   gap: 1.2rem;
-   max-width: 30rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
 }
 
 .news-card-image {
    border-radius: var(--border-radius);
-   width: 20rem;
+   width: 100%;
    height: 15rem;
    object-fit: cover;
+}
+
+.news-card-info-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.news-card-author,
+.news-card-date {
+   font-size: .87rem;
+}
+
+.news-card-title {
+   color: var(--title-color);
+}
+
+.news-card-btn {
+   background-color: transparent;
+   border: none;
+   color: var(--calm-black-color);
+   cursor: pointer;
+   font-size: var(--fs-navs);
+   font-weight: 500;
+   outline-color: var(--black-color);
+   transition: var(--general-transition);
+   width: max-content;
+}
+
+.news-card-btn i {
+   font-size: .87rem;
+}
+
+.news-card-btn:is(:hover, :active) {
+   color: var(--black-color);
+   text-decoration: underline;
+}
+
+
+/* Medium devices */
+/* breakpoint 586px media query */
+@media screen and (max-width: 36.625em) {
+   .news-card-list-container {
+      gap: 2.7rem;
+   }
 }
