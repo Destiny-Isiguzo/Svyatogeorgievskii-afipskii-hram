@@ -27,9 +27,9 @@
 
 .schedule-current-day-time {
    font-style: italic;
-   font-size: .938rem;
+   font-size: .97rem;
    font-weight: 500;
-   margin-top: .5rem;
+   margin-top: 1rem;
    text-decoration: underline;
 }
 
@@ -43,9 +43,9 @@
    background-color: #fff;
    border-radius: var(--border-radius);
    border: .6px solid rgba(0 0 0 / .09);
+   box-shadow: 0 2.5px 20px 0 rgba(0 0 0 / .065);
    display: grid;
    gap: 1.2rem;
-   filter: drop-shadow(0 2.5px 20px rgba(0 0 0 / .065));
    padding: 1.3rem 1rem;
 }
 

@@ -8,7 +8,7 @@
    display: flex;
    flex-direction: column;
    gap: .5rem;
-   margin-bottom: 1.5rem;
+   margin-bottom: 2rem;
    text-align: center;
 }
 
@@ -32,7 +32,10 @@
    justify-content: center;
    gap: 1rem;
    margin-bottom: clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem);
-   overflow: hidden;
+}
+
+.tab-btn-container li {
+   margin-bottom: .7rem;
 }
 
 .tab-btn {
@@ -40,18 +43,21 @@
    border: 1px solid var(--black-color);
    border-radius: var(--btn-border-radius);
    color: var(--calm-black-color);
-   cursor: pointer;
    outline: var(--black-color);
    padding: .5rem;
 }
 
-.tab-btn-active {
+.tab-btn.active {
    background-color: var(--black-color);
    color: var(--white-color);
 }
 
 .tab-content {
    display: none;
+}
+
+.tab-content.active {
+   display: block;
 }
 
 .news-card-list-container {

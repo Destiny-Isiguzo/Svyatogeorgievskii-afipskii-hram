@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="style-components/news.css">
     <link rel="stylesheet" href="style-components/schedule.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
     <title>Свято-Георгиевский храм | пгт. Афипского</title>
   </head>
   <body>
@@ -175,224 +174,238 @@
       <section class="news-section" id="novostii" aria-label="Раздел Новости">
         <div class="news-heading-container">
           <h2 class="news-title">Новости</h2>
-          <p class="news-subtitle">Следите за событиями в нашем церковном муниципалитете</p>
+          <p class="news-subtitle">Следите за событиями в нашем Храме</p>
         </div>
 
         <div class="news-card-list-tab-container">
-          <div class="tab tab-btn-container">
-            <button type="button" class="tab-btn tab-btn-active">Все</button>
+          <ul class="tab-btn-container" role="list">
+            <li>
+              <a href="#tab-1" class="tab-btn active">Все</a>
+            </li>
 
-            <button type="button" class="tab-btn">Мастерская</button>
+            <li>
+              <a href="#tab-2" class="tab-btn">Мастерская</a>
+            </li>
 
-            <button type="button" class="tab-btn">Проповеди</button>
+            <li>
+              <a href="#tab-3" class="tab-btn">Проповеди</a>
+            </li>
 
-            <button type="button" class="tab-btn">Поддержка СВО</button>         
+            <li>
+              <a href="#tab-4" class="tab-btn">Поддержка СВО</a>
+            </li>
 
-            <button type="button" class="tab-btn">Воскресная школа</button>
+            <li>
+              <a href="#tab-5" class="tab-btn">Воскресная школа</a>
+            </li>
 
-            <button type="button" class="tab-btn">Праздник</button>
-          </div>
+            <li>
+              <a href="#tab-6" class="tab-btn">Праздник</a>
+            </li>
+          </ul>
   
-          <div id="section1" class="tab-content tab-content1" style="display: block;">
-            <div class="news-card-list-container">
-              <div class="news-card">
-                <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
-
-                <div class="news-card-info-container">
-                  <p class="news-card-author">Оксана Томаева</p>
-                  <p class="news-card-date">23.06.2024</p>
+          <div class="tab-content-container">
+            <div id="tab-1" class="tab-content tab-content1 active">  <!-- Все -->
+              <div class="news-card-list-container">
+                <div class="news-card">
+                  <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
+  
+                  <div class="news-card-info-container">
+                    <p class="news-card-author">Оксана Томаева</p>
+                    <p class="news-card-date">23.06.2024</p>
+                  </div>
+                  
+                  <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
+        
+                  <p class="news-card-text">
+                    Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
+                  </p>
+  
+                  <button type="button" class="news-card-btn">
+                    Читать дальше
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
                 </div>
-                
-                <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
-      
-                <p class="news-card-text">
-                  Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
-                </p>
-
-                <button type="button" class="news-card-btn">
-                  Читать дальше
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </div>
+    
+                <div class="news-card">
+                  <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
   
-              <div class="news-card">
-                <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
-
-                <div class="news-card-info-container">
-                  <p class="news-card-author">Оксана Томаева</p>
-                  <p class="news-card-date">23.06.2024</p>
+                  <div class="news-card-info-container">
+                    <p class="news-card-author">Оксана Томаева</p>
+                    <p class="news-card-date">23.06.2024</p>
+                  </div>
+                  
+                  <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
+        
+                  <p class="news-card-text">
+                    Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
+                  </p>
+    
+                  <button type="button" class="news-card-btn">
+                    Читать дальше
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
                 </div>
-                
-                <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
-      
-                <p class="news-card-text">
-                  Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
-                </p>
+    
+                <div class="news-card">
+                  <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
   
-                <button type="button" class="news-card-btn">
-                  Читать дальше
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </div>
-  
-              <div class="news-card">
-                <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
-
-                <div class="news-card-info-container">
-                  <p class="news-card-author">Оксана Томаева</p>
-                  <p class="news-card-date">23.06.2024</p>
+                  <div class="news-card-info-container">
+                    <p class="news-card-author">Оксана Томаева</p>
+                    <p class="news-card-date">23.06.2024</p>
+                  </div>
+                  
+                  <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
+        
+                  <p class="news-card-text">
+                    Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
+                  </p>
+    
+                  <button type="button" class="news-card-btn">
+                    Читать дальше
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
                 </div>
-                
-                <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
-      
-                <p class="news-card-text">
-                  Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
-                </p>
+    
+                <div class="news-card">
+                  <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
   
-                <button type="button" class="news-card-btn">
-                  Читать дальше
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </div>
-  
-              <div class="news-card">
-                <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
-
-                <div class="news-card-info-container">
-                  <p class="news-card-author">Оксана Томаева</p>
-                  <p class="news-card-date">23.06.2024</p>
+                  <div class="news-card-info-container">
+                    <p class="news-card-author">Оксана Томаева</p>
+                    <p class="news-card-date">23.06.2024</p>
+                  </div>
+                  
+                  <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
+        
+                  <p class="news-card-text">
+                    Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
+                  </p>
+    
+                  <button type="button" class="news-card-btn">
+                    Читать дальше
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
                 </div>
-                
-                <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
-      
-                <p class="news-card-text">
-                  Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
-                </p>
-  
-                <button type="button" class="news-card-btn">
-                  Читать дальше
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div id="section2" class="tab-content tab-content2">
-            <div class="news-card-list-container">
-              <div class="news-card">
-                <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
-
-                <div class="news-card-info-container">
-                  <p class="news-card-author">Оксана Томаева</p>
-                  <p class="news-card-date">23.06.2024</p>
-                </div>
-                
-                <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
-      
-                <p class="news-card-text">
-                  Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
-                </p>
-  
-                <a href="" class="news-card-btn">
-                  Читать дальше
-                  <i class="fa-solid fa-arrow-right"></i>
-                </a>
               </div>
             </div>
-          </div>
-
-          <div id="section3" class="tab-content tab-content3">
-            <div class="news-card-list-container">
-              <div class="news-card">
-                <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
-
-                <div class="news-card-info-container">
-                  <p class="news-card-author">Оксана Томаева</p>
-                  <p class="news-card-date">23.06.2024</p>
-                </div>
-                
-                <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
-      
-                <p class="news-card-text">
-                  Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
-                </p>
   
-                <a href="" class="news-card-btn">
-                  Читать дальше
-                  <i class="fa-solid fa-arrow-right"></i>
-                </a>
+            <div id="tab-2" class="tab-content tab-content2"> <!-- Мастерская -->
+              <div class="news-card-list-container">
+                <div class="news-card">
+                  <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
+  
+                  <div class="news-card-info-container">
+                    <p class="news-card-author">Оксана Томаева</p>
+                    <p class="news-card-date">23.06.2024</p>
+                  </div>
+                  
+                  <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
+        
+                  <p class="news-card-text">
+                    Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
+                  </p>
+    
+                  <a href="" class="news-card-btn">
+                    Читать дальше
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div id="section4" class="tab-content tab-content4">
-            <div class="news-card-list-container">
-              <div class="news-card">
-                <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
-
-                <div class="news-card-info-container">
-                  <p class="news-card-author">Оксана Томаева</p>
-                  <p class="news-card-date">23.06.2024</p>
-                </div>
-                
-                <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
-      
-                <p class="news-card-text">
-                  Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
-                </p>
   
-                <a href="" class="news-card-btn">
-                  Читать дальше
-                  <i class="fa-solid fa-arrow-right"></i>
-                </a>
+            <div id="tab-3" class="tab-content tab-content3"> <!-- Проповеди -->
+              <div class="news-card-list-container">
+                <div class="news-card">
+                  <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
+  
+                  <div class="news-card-info-container">
+                    <p class="news-card-author">Оксана Томаева</p>
+                    <p class="news-card-date">23.06.2024</p>
+                  </div>
+                  
+                  <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
+        
+                  <p class="news-card-text">
+                    Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
+                  </p>
+    
+                  <a href="" class="news-card-btn">
+                    Читать дальше
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div id="section5" class="tab-content tab-content5">
-            <div class="news-card-list-container">
-              <div class="news-card">
-                <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
-
-                <div class="news-card-info-container">
-                  <p class="news-card-author">Оксана Томаева</p>
-                  <p class="news-card-date">23.06.2024</p>
-                </div>
-                
-                <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
-      
-                <p class="news-card-text">
-                  Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
-                </p>
   
-                <a href="" class="news-card-btn">
-                  Читать дальше
-                  <i class="fa-solid fa-arrow-right"></i>
-                </a>
+            <div id="tab-4" class="tab-content tab-content4"> <!-- Поддержка СВО -->
+              <div class="news-card-list-container">
+                <div class="news-card">
+                  <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
+  
+                  <div class="news-card-info-container">
+                    <p class="news-card-author">Оксана Томаева</p>
+                    <p class="news-card-date">23.06.2024</p>
+                  </div>
+                  
+                  <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
+        
+                  <p class="news-card-text">
+                    Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
+                  </p>
+    
+                  <a href="" class="news-card-btn">
+                    Читать дальше
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div id="section6" class="tab-content tab-content6">
-            <div class="news-card-list-container">
-              <div class="news-card">
-                <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
-
-                <div class="news-card-info-container">
-                  <p class="news-card-author">Оксана Томаева</p>
-                  <p class="news-card-date">23.06.2024</p>
-                </div>
-                
-                <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
-      
-                <p class="news-card-text">
-                  Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
-                </p>
   
-                <a href="" class="news-card-btn">
-                  Читать дальше
-                  <i class="fa-solid fa-arrow-right"></i>
-                </a>
+            <div id="tab-5" class="tab-content tab-content5"> <!-- Воскресная школа -->
+              <div class="news-card-list-container">
+                <div class="news-card">
+                  <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
+  
+                  <div class="news-card-info-container">
+                    <p class="news-card-author">Оксана Томаева</p>
+                    <p class="news-card-date">23.06.2024</p>
+                  </div>
+                  
+                  <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
+        
+                  <p class="news-card-text">
+                    Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
+                  </p>
+    
+                  <a href="" class="news-card-btn">
+                    Читать дальше
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+  
+            <div id="tab-6" class="tab-content tab-content6"> <!-- Праздник -->
+              <div class="news-card-list-container">
+                <div class="news-card">
+                  <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" class="news-card-image">
+  
+                  <div class="news-card-info-container">
+                    <p class="news-card-author">Оксана Томаева</p>
+                    <p class="news-card-date">23.06.2024</p>
+                  </div>
+                  
+                  <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
+        
+                  <p class="news-card-text">
+                    Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы...
+                  </p>
+    
+                  <a href="" class="news-card-btn">
+                    Читать дальше
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

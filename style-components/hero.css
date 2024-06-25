@@ -22,13 +22,12 @@
 .hero-title {
    color: var(--title-color);
    font-size: clamp(1.75rem, 1.3627rem + 1.6526vw, 2.85rem);
-   font-family: var(--ff-prayer);
+   font-family: var(--ff-heading);
 }
 
 .hero-text-desc {
    color: var(--text-color);
    font-size: clamp(1.097rem, 1.0783rem + 0.0796vw, 1.15rem);
-   font-family: var(--ff-prayer);
    max-width: 50rem;
    letter-spacing: .02rem;
 }

@@ -77,8 +77,8 @@
 
 .nav-link {
   color: var(--faint-gray-color);
-  font-size: var(--fs-navs);
-  font-family: var(--ff-body);
+  font-size: var(--fs-nav);
+  font-family: var(--ff-nav);
   font-weight: 500;
   transition: var(--general-transition);
 }
@@ -104,7 +104,7 @@
   gap: .5rem;
   font-size: clamp(0.9rem, 0.8824rem + 0.0751vw, 0.95rem);
   font-weight: 500;
-  font-family: var(--ff-navs);
+  font-family: var(--ff-nav);
   outline: none;
   padding: .57rem .7rem;
   transition: var(--general-transition);
@@ -168,7 +168,7 @@
   gap: .5rem;
   font-size: clamp(0.9rem, 0.8824rem + 0.0751vw, 0.95rem);
   font-weight: 500;
-  font-family: var(--ff-navs);
+  font-family: var(--ff-nav);
   outline: none;
   padding: .57rem .7rem;
   transition: var(--general-transition);
