@@ -34,7 +34,7 @@
 
 .schedule-cards-container {
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(clamp(20rem, 18.2394rem + 7.5117vw, 25rem), 1fr));
    gap: 1.2rem;
 }
 

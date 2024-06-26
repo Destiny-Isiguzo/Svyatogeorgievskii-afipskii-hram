@@ -390,8 +390,8 @@
 
       <section class="contact-section" id="kontakti" aria-label="Раздел Контакты">
         <div class="contact-heading-container">
-          <h2 class="section-title">Контакты</h2>
-          <p class="section-subtitle">Свяжитесь с нами</p>
+          <h2 class="contact-title">Контакты</h2>
+          <p class="contact-subtitle">Свяжитесь с нами</p>
         </div>
 
         <div class="contact-content-container">
@@ -406,14 +406,30 @@
                   священнослужитель отец Андрей
                 </p>
 
-                <a href="tel:+7 918 414 11 14" class="contact-info-text">
-                  +7 918 414 11 14
+                <a href="tel:+7 918 414-11-14" class="contact-info-text">
+                  +7 918 414-11-14
                 </a>
               </div>
             </div>
 
             <div class="contact-info">
               <div class="contact-info-icon contact-info-icon2">
+                <i class="fa-solid fa-shop"></i>
+              </div>
+
+              <div class="contact-info-text-container">
+                <p class="contact-info-title">
+                  Телефон храма для справок
+                </p>
+
+                <a href="tel:+7 918 452-42-40" class="contact-info-text">
+                  +7 918 452-42-40
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-info">
+              <div class="contact-info-icon contact-info-icon3">
                 <i class="fa-solid fa-clock"></i>
               </div>
 
@@ -423,13 +439,13 @@
                 </p>
 
                 <p class="contact-info-text">
-                  Понедельник - суббота: 9:00 - 18:00
+                  Пн - Вс: 8:00 - 17:00
                 </p>
               </div>
             </div>
 
             <div class="contact-info">
-              <div class="contact-info-icon contact-info-icon3">
+              <div class="contact-info-icon contact-info-icon4">
                 <i class="fa-solid fa-location-dot"></i>
               </div>
 
@@ -444,6 +460,46 @@
               </div>
             </div>
           </div>
+
+          <form action="" class="contact-form">
+            <p class="contact-form-subtitle">
+              Или, если у вас есть вопросы, вы можете отправить нам электронное письмо
+            </p>
+    
+            <div class="contact-form-input-container">
+              <div class="contact-form-input">
+                <label for="name">Имя <span>*</span></label>
+                <input type="text" id="name" name="Имя" autocomplete="name" class="contact-form-input-text" required />
+              </div>
+
+              <div class="contact-form-input">
+                <label for="email">Емайл <span>*</span></label>
+                <input type="email" id="email" name="Емайл" autocomplete="email" class="contact-form-input-text" required />
+              </div>
+            </div>
+
+            <div class="contact-form-input-container">
+              <div class="contact-form-input">
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="Телефон" autocomplete="tel" class="contact-form-input-text" />
+              </div>
+
+              <div class="contact-form-input">
+                <label for="subject">Тема письма <span>*</span></label>
+                <input type="text" id="subject" name="Тема письма" class="contact-form-input-text" required />
+              </div>
+            </div>
+
+            <div class="contact-form-input">
+              <label for="message">Ваше сообщение <span>*</span></label>
+              <textarea id="message" name="Сообщение"  class="contact-form-input-text contact-form-input-textarea" required></textarea>
+            </div>
+
+            <button type="submit" class="contact-form-btn" id="contact-form-btn">
+              Отправить
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
         </div>
       </section>
       <!-- CONTACT SECTION -->

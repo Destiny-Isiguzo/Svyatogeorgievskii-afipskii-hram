@@ -1,6 +1,6 @@
 .contact-section {
    padding-block: 4rem;
-   padding-inline: var(--padding-inline);
+   padding-inline: clamp(0.8rem, -4.5521rem + 22.8357vw, 16rem);
 }
 
 .contact-heading-container {
@@ -11,20 +11,24 @@
    text-align: center;
 }
 
-.section-title {
+.contact-title {
    color: var(--title-color);
    font-size: var(--fs-section-title);
    font-family: var(--ff-heading);
 }
 
-.section-subtitle {
+.contact-subtitle {
    font-weight: 500;
    font-size: var(--fs-section-subtitle);
    margin: auto;
    width: clamp(20rem, 5.9155rem + 60.0939vw, 60rem);
 }
 
-.contact-content-container {}
+.contact-content-container {
+   display: grid;   
+   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+   gap: 4rem;
+}
 
 .contact-info-container {
    display: flex;
@@ -75,6 +79,14 @@
    color: #181818;
 }
 
+.contact-info-icon4 {
+   background-color: #ff5252;
+}
+
+.contact-info-icon4 i {
+   color: rgb(128, 0, 0);
+}
+
 .contact-info-text-container {
    display: flex;
    flex-direction: column;
@@ -89,4 +101,71 @@
 
 .contact-info-text-address {
    max-width: 19rem;
+}
+
+.contact-form {
+   display: flex;
+   flex-direction: column;
+   gap: 1.75rem;
+   max-width: 43rem;
+}
+
+.contact-form-input-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+   gap: clamp(0.7rem, 0.5592rem + 0.6009vw, 1.1rem);
+}
+
+.contact-form-input {
+   display: flex;
+   flex-direction: column;
+   gap: .3rem;
+}
+
+label span {
+   color: red;
+}
+
+.contact-form-input-text {
+   border-radius: var(--border-radius);
+   border: 1px solid rgba(0 0 0 / .2);
+   color: var(--text-color);
+   padding: clamp(0.5rem, 0.4296rem + 0.3005vw, 0.7rem) 1rem;
+   outline: none;
+   transition: var(--general-transition);
+}
+
+.contact-form-input-text:-webkit-autofill {
+   transition: background-color 6000s, color 6000s;
+}
+
+.contact-form-input-text:focus {
+   border: 1px solid rgba(0 0 0 / .7)
+}
+
+.contact-form-input-textarea {
+   resize: none;
+   height: 10rem;
+}
+
+.contact-form-btn {
+   background-color: var(--calm-black-color);
+   border: 1.55px solid transparent;
+   border-radius: var(--btn-border-radius);
+   color: var(--white-color);
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   gap: .5rem;
+   font-weight: 500;
+   outline: var(--text-color);
+   padding: .5rem 1rem;
+   width: fit-content;
+   transition: var(--general-transition);
+}
+
+.contact-form-btn:hover {
+   background-color: transparent;
+   border: 1.55px solid var(--black-color);
+   color: var(--black-color);
 }
