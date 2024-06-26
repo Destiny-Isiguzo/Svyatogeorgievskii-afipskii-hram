@@ -1,0 +1,24 @@
+.contact-section {
+   padding-block: 4rem;
+}
+
+.contact-heading-container {
+   display: flex;
+   flex-direction: column;
+   gap: .5rem;
+   margin-bottom: 2rem;
+   text-align: center;
+}
+
+.section-title {
+   color: var(--title-color);
+   font-size: var(--fs-section-title);
+   font-family: var(--ff-heading);
+}
+
+.section-subtitle {
+   font-weight: 500;
+   font-size: var(--fs-section-subtitle);
+   margin: auto;
+   width: clamp(20rem, 5.9155rem + 60.0939vw, 60rem);
+}

@@ -1,6 +1,6 @@
 // Constants
 const HEADER_ACTIVE_SCROLL_Y = 40; // Scroll Y position to activate header
-const SCROLL_UP_BTN_SHOW_SCROLL_Y = 1500; // Scroll Y position to show scroll up button
+const SCROLL_UP_BTN_SHOW_SCROLL_Y = 1600; // Scroll Y position to show scroll up button
 
 // Cache DOM elements
 const header = document.querySelector('.header');
@@ -10,7 +10,6 @@ const navMenuOverlay = document.getElementById('nav-menu-container-overlay');
 const navBtns = document.querySelectorAll('#open-nav-btn, #close-nav-btn'); 
 const preloader = document.getElementById('preloader'); 
 const scrollUpBtn = document.getElementById('scrollup-btn'); 
-const scrollY = window.scrollY; 
 const scheduleCards = document.querySelectorAll('.schedule-card');
 const date = new Date(); 
 const dayOfWeek = date.toLocaleString('en-US', { weekday: 'long' });
@@ -62,6 +61,7 @@ function toggleNavMenu() {
  * Handle scroll event
  */
 function handleScroll() {
+  const scrollY = window.scrollY; 
   document.getElementById('header').classList.toggle('header-active', scrollY > HEADER_ACTIVE_SCROLL_Y);
   document.getElementById('scrollup-btn').classList.toggle('scrollup-btn-show', scrollY > SCROLL_UP_BTN_SHOW_SCROLL_Y);
 }
@@ -116,14 +116,11 @@ scheduleCards.forEach((card) => {
 // Update schedule current day time every second
 setInterval(() => {
   const now = new Date();
-  scheduleCurrentDayTimeElement.textContent = now.toLocaleTimeString('ru-RU', {
+  scheduleCurrentDayTimeElement.textContent = now.toLocaleDateString('ru-RU', {
     weekday: 'long',
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit',
   });
 }, 1000);
 

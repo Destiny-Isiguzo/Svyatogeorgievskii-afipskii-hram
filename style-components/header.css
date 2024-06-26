@@ -142,19 +142,19 @@
 
 .logo-container {
   display: flex;
-  gap: .5rem;
+  gap: .4rem;
 }
 
 .logo-icon-container i {
   color: var(--faint-white-color);
-  font-size: 1.1rem;
-  padding-top: .25rem;
+  font-size: 1rem;
+  padding-top: .37rem;
 }
 
 .logo-text {
   color: var(--faint-white-color);
-  font-family: var(--ff-body);
-  font-size: clamp(0.94rem, 0.8308rem + 0.4657vw, 1.25rem);
+  font-family: var(--ff-heading);
+  font-size: clamp(0.94rem, 0.8661rem + 0.3155vw, 1.15rem);
 }
 
 .open-nav-btn {

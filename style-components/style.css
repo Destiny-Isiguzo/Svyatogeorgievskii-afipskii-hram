@@ -112,7 +112,7 @@ body {
    gap: .5rem;
    font-weight: 500;
    outline: none;
-   padding: .57rem .7rem;
+   padding: .57rem .67rem;
    position: fixed;
    right: .8rem;
    bottom: 12rem;
@@ -124,29 +124,10 @@ body {
 .scrollup-btn i {
    font-size: .87rem;
    transition: var(--general-transition);
-   animation: scroll-up 2s infinite;
 }
 
 .scrollup-btn-show {
    transform: translateX(0);
-}
-
-
-@keyframes scroll-up {
-   0% {
-      transform: translateY(1rem);
-      opacity: 0;
-   }
-
-   50% {
-      transform: translateY(0);
-      opacity: 1;
-   }
-
-   100% {
-      transform: translateY(-.6rem);
-      opacity: 0;
-   }
 }
 
 

@@ -19,7 +19,6 @@
 }
 
 .news-subtitle {
-   color: var(--text-color);
    font-weight: 500;
    font-size: var(--fs-section-subtitle);
    margin: auto;
@@ -40,11 +39,11 @@
 
 .tab-btn {
    background-color: transparent;
-   border: 1px solid var(--black-color);
+   border: 1px solid var(--calm-black-color);
    border-radius: var(--btn-border-radius);
    color: var(--calm-black-color);
    outline: var(--black-color);
-   padding: .5rem;
+   padding: .4rem .65rem;
 }
 
 .tab-btn.active {
@@ -69,23 +68,16 @@
 .news-card {
    display: flex;
    flex-direction: column;
-   gap: 1rem;
+   row-gap: .8rem;
 }
 
 .news-card-image {
    border-radius: var(--border-radius);
    width: 100%;
-   height: 15rem;
+   height: 16rem;
    object-fit: cover;
 }
 
-.news-card-info-container {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-}
-
-.news-card-author,
 .news-card-date {
    font-size: .87rem;
 }
@@ -95,13 +87,11 @@
 }
 
 .news-card-btn {
-   background-color: transparent;
-   border: none;
    color: var(--calm-black-color);
-   cursor: pointer;
    font-size: var(--fs-navs);
    font-weight: 500;
    outline-color: var(--black-color);
+   text-decoration: underline;
    transition: var(--general-transition);
    width: max-content;
 }
@@ -112,7 +102,6 @@
 
 .news-card-btn:is(:hover, :active) {
    color: var(--black-color);
-   text-decoration: underline;
 }
 
 
