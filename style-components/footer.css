@@ -1,10 +1,10 @@
 .footer {
-   border-top: .7px solid rgba(0 0 0 / .14);
+   border-top: 1px solid rgba(0 0 0 / .15);
    display: flex;
    align-items: center;
    justify-content: space-between;
    flex-wrap: wrap-reverse;
-   gap: 1rem;
+   gap: 1.15rem;
    padding-block: 1.8rem;
    padding-inline: var(--padding-inline);
 }
@@ -66,7 +66,6 @@
 @media screen and (max-width: 58.125em) {
    .footer {
       justify-content: center;
-      flex-direction: column-reverse;
    }
 
    .footer-text {

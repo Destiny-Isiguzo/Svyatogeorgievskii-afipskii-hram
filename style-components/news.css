@@ -29,7 +29,7 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   gap: 1rem;
+   gap: clamp(0.7rem, 0.5944rem + 0.4507vw, 1rem);
    margin-bottom: clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem);
 }
 
@@ -39,9 +39,9 @@
 
 .tab-btn {
    background-color: transparent;
-   border: 1px solid var(--calm-black-color);
+   border: 1px solid rgba(0 0 0 / .4);
    border-radius: var(--btn-border-radius);
-   color: var(--calm-black-color);
+   color: var(--text-color);
    outline: var(--black-color);
    padding: .4rem .65rem;
 }

@@ -7,7 +7,7 @@
    display: flex;
    flex-direction: column;
    gap: .5rem;
-   margin-bottom: 2rem;
+   margin-bottom: 3.5rem;
    text-align: center;
 }
 
@@ -128,9 +128,11 @@ label span {
 
 .contact-form-input-text {
    border-radius: var(--border-radius);
-   border: 1px solid rgba(0 0 0 / .2);
+   border: 1px solid rgba(0 0 0 / .3);
    color: var(--text-color);
-   padding: clamp(0.5rem, 0.4296rem + 0.3005vw, 0.7rem) 1rem;
+   padding: clamp(0.5rem, 0.4296rem + 0.3005vw, 0.7rem) 
+            clamp(0.7rem, 0.5944rem + 0.4507vw, 1rem);
+   font-size: 1rem;
    outline: none;
    transition: var(--general-transition);
 }

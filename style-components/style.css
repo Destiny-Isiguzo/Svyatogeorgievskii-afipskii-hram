@@ -30,7 +30,7 @@
    --fs-logo: clamp(1.25rem, 1.1620rem + 0.3756vw, 1.5rem);
    --fs-btn: clamp(0.938rem, 0.8986rem + 0.1683vw, 1.05rem);
    --fs-section-title: clamp(1.5rem, 1.2887rem + 0.9014vw, 2.1rem);
-   --fs-section-subtitle: 1.1rem;
+   --fs-section-subtitle: clamp(1.07rem, 1.0594rem + 0.0451vw, 1.1rem);
 
 
    /* SPACING */
