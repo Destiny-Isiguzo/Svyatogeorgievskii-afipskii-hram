@@ -1,9 +1,8 @@
 .hero-section {
-   background-color: var(--container-color);
    display: grid;
    place-items: center;
    gap: 1rem;
-   padding-top: clamp(3rem, 2.6479rem + 1.5023vw, 4rem);
+   padding-top: clamp(4rem, 3.2958rem + 3.0047vw, 6rem);
    padding-inline: var(--padding-inline);
    padding-bottom: clamp(3rem, 1.9437rem + 4.5070vw, 6rem);
    overflow: hidden;

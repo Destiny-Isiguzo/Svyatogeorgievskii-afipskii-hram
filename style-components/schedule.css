@@ -1,4 +1,5 @@
 .schedule-section {
+   background-color: var(--container-color);
    padding-block: 4rem;
    padding-inline: var(--padding-inline);
 }
@@ -39,7 +40,6 @@
 }
 
 .schedule-card {
-   background-color: #fff;
    border-radius: var(--border-radius);
    border: .7px solid rgba(0 0 0 / .14);
    display: grid;
@@ -51,17 +51,8 @@
    display: none;
 }
 
-.schedule-card-title {
-   color: var(--title-color);
-}
-
 .schedule-card-event li {
    list-style-position: inside;
-}
-
-.red-text {
-   color: red;
-   font-style: italic;
 }
 
 .schedule-card-active {

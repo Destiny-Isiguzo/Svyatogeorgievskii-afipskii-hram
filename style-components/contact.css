@@ -1,6 +1,6 @@
 .contact-section {
    padding-block: 4rem;
-   padding-inline: clamp(0.8rem, -4.5521rem + 22.8357vw, 16rem);
+   padding-inline: var(--padding-inline);
 }
 
 .contact-heading-container {
@@ -31,9 +31,9 @@
 }
 
 .contact-info-container {
-   display: flex;
-   flex-direction: column;
-   gap: 1.7rem;
+   display: grid;   
+   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+   gap: 2rem;
 }
 
 .contact-info {

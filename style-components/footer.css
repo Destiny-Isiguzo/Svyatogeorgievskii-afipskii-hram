@@ -55,10 +55,15 @@
 }
 
 .footer-built-link {
-   color: var(--calm-black-color);
+   color: var(--black-color);
    font-weight: 500;
    font-size: .95rem;
    text-decoration: underline;
+   transition: var(--general-transition);
+}
+
+.footer-built-link:is(:active, :hover) {
+   color: var(--btn-bg);
 }
 
 /* Small - Medium devices */
