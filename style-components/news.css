@@ -37,12 +37,11 @@
 }
 
 .tab-btn {
-   background-color: transparent;
    border: 1px solid rgba(0 0 0 / .4);
    border-radius: var(--btn-border-radius);
    color: var(--text-color);
-   outline: var(--black-color);
-   padding: .4rem .65rem;
+   padding: clamp(0.35rem, 0.3324rem + 0.0751vw, 0.4rem) 
+            clamp(0.55rem, 0.5148rem + 0.1502vw, 0.65rem);
 }
 
 .tab-btn.tabBtnActive {
@@ -102,7 +101,7 @@
 }
 
 .news-card-btn {
-   color: var(--btn-bg);
+   color: var(--black-color);
    font-size: var(--fs-navs);
    font-weight: 500;
    outline-color: var(--black-color);
@@ -113,10 +112,11 @@
 
 .news-card-btn i {
    font-size: .87rem;
+   margin-left: .25rem;
 }
 
 .news-card-btn:is(:hover, :active) {
-   color: var(--text-color);
+   color: var(--btn-bg);
 }
 
 
@@ -131,19 +131,19 @@
 
 /*  NEWS SINGLES STYLES  */
 .news-single-container {
+   padding-block: 1.5rem 2rem;
    padding-inline: clamp(0.8rem, -7.7211rem + 36.3568vw, 25rem);
 }
 
 .news-single-header {
-   background-color: var(--white-color);
-   border: .7px solid rgba(0 0 0/ .1);
+   background-color: var(--body-color);
+   border: .7px solid rgba(0 0 0/ .15);
    display: flex;
    justify-content: center;
    align-items: center;
    height: clamp(3.9rem, 3.5831rem + 1.3521vw, 4.8rem);
    position: sticky;
    top: 0;
-   margin-bottom: 1.5rem;
    z-index: var(--z-fixed);
 }
 
@@ -155,7 +155,7 @@
 }
 
 .news-single-btn {
-   color: var(--btn-bg);
+   color: var(--black-color);
    font-size: var(--fs-navs);
    font-weight: 500;
    outline-color: var(--black-color);
@@ -166,10 +166,11 @@
 
 .news-single-btn i {
    font-size: .87rem;
+   margin-right: .25rem;
 }
 
 .news-single-btn:is(:hover, :active) {
-   color: var(--text-color);
+   color: var(--btn-bg);
 }
 
 .carousel-container {
@@ -257,12 +258,10 @@
 }
 
 .news-single-content-heading-container {
-   border-bottom: .7px solid rgba(0 0 0/ .1);
    display: flex;
    flex-direction: column;
    gap: .5rem;
-   padding-bottom: .85rem;
-   margin-bottom: 2.7rem;
+   margin-bottom: 3rem;
 }
 
 .news-single-content-title {
@@ -302,7 +301,6 @@
    display: flex;
    flex-direction: column;
    row-gap: 1.7rem;
-   margin-bottom: 2rem;
 }
 
 .new-single-content-image {

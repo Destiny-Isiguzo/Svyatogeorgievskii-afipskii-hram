@@ -1,61 +1,17 @@
 .footer {
+   border: .7px solid rgba(0 0 0/ .15);
    background-color: var(--container-color);
    display: flex;
    align-items: center;
-   flex-direction: column;
-   gap: 1.7rem;
+   justify-content: space-between;
+   flex-wrap: wrap-reverse;
+   gap: 1.3rem;
    padding-block: 2rem;
    padding-inline: var(--padding-inline);
    width: 100%;
 }
 
-.footer-contact-info-container {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-wrap: wrap;
-   gap: clamp(2rem, 0.2394rem + 7.5117vw, 7rem);
-}
-
-.footer-contact-info-text-container {
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   gap: .3rem;
-}
-
-.footer-contact-info-title {
-   color: var(--black-color);
-   font-weight: 500;
-   font-size: 1rem;
-}
-
-.footer-contact-info-text {
-   color: var(--text-color);
-   font-size: 1.07rem;
-}
-
-.footer-contact-info-text-address {
-   margin: auto;
-   max-width: 18rem;
-   text-align: center;
-}
-
-.footer-divider {
-  border: .7px solid rgba(0 0 0 / .1);
-  width: 100%;
-}
-
-.footer-bottom-container {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   gap: 1rem;
-   width: 100%;
-   text-align: center;
-}
-
-.footer-bottom-text {
+.footer-text {
    color: var(--title-color);
    font-size: .96rem;
 }
@@ -67,7 +23,7 @@
 }
 
 .footer-social-link i {
-   font-size: 1.3rem;
+   font-size: 1.35rem;
 }
 
 .footer-social-link:nth-child(1) {
@@ -86,49 +42,11 @@
    color: var(--calm-black-color);
 }
 
-.footer-built-container {
-   display: flex;
-   align-items: center;
-   gap: .3rem;
-}
-
-.footer-built-text {
-   font-size: .95rem;
-}
-
-.footer-built-text i {
-   color: red;
-}
-
-.footer-built-link {
-   color: var(--black-color);
-   font-weight: 500;
-   font-size: .95rem;
-   text-decoration: underline;
-   transition: var(--general-transition);
-}
-
-.footer-built-link:is(:active, :hover) {
-   color: var(--btn-bg);
-}
 
 /* Small - Medium devices */
 /* breakpoint 930px media query */
 @media screen and (max-width: 58.125em) {
    .footer {
       justify-content: center;
-   }
-
-   .footer-bottom-container {
-      justify-content: center;
-      flex-direction: column-reverse;
-   }
-
-   .footer-text {
-      text-align: center;
-   }
-
-   .footer-socials-container {
-      order: 1;
    }
 }
