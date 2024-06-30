@@ -165,7 +165,7 @@ scheduleCards.forEach((card) => {
   const dayElement = card.querySelector('.schedule-card-day');
 
   if (dayElement.innerText.toLowerCase() === 'sunday' && dayOfWeek.toLowerCase() === 'sunday') {
-    card.classList.add('schedule-card-active');
+    // card.classList.add('schedule-card-active');
   }
 });
 
