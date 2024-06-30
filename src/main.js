@@ -1,6 +1,6 @@
 // Constants
 const HEADER_ACTIVE_SCROLL_Y = 40; // Scroll Y position to activate header
-const SCROLL_UP_BTN_SHOW_SCROLL_Y = 2000; // Scroll Y position to show scroll up button
+const SCROLL_UP_BTN_SHOW_SCROLL_Y = 1500; // Scroll Y position to show scroll up button
 
 // Cache DOM elements
 const header = document.querySelector('.header');
@@ -63,7 +63,7 @@ function toggleNavMenu() {
 
 /**
  * Handle scroll event
- */
+*/
 function handleScroll() {
   const scrollY = window.scrollY; 
   header.classList.toggle('header-active', scrollY > HEADER_ACTIVE_SCROLL_Y);
@@ -72,7 +72,7 @@ function handleScroll() {
 
 /**
  * Scroll to top of the page
- */
+*/
 function scrollToTop() {
   window.scrollTo({
     top: 0,
@@ -179,6 +179,7 @@ setInterval(() => {
     day: 'numeric',
   });
 }, 1000);
+
 
 // Update footer year
 year.innerText = new Date().getFullYear();

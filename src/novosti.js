@@ -43,9 +43,9 @@ function handleScroll() {
  * Scroll to top of the page
  */
 function scrollToTop() {
-   window.scrollTo({
-     top: 0,
-     behavior: 'smooth',
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
    });
 }
 
@@ -124,7 +124,7 @@ updateWordCount();
  * Calculate reading time based on average reading speed
 */
 function calculateReadingTime() {
-  const averageReadingSpeed = 150; // words per minute (adjust to your liking)
+  const averageReadingSpeed = 100; // words per minute
   let totalWords = 0;
 
   newsSingleContentTexts.forEach((text) => {
@@ -142,11 +142,11 @@ function calculateReadingTime() {
   const timeString = [
     hours ? `${hours} ч.` : '',
     minutesRemaining ? `${minutesRemaining} мин.` : '',
-    // secondsRemaining ? `${secondsRemaining} сек.` : '',
+    secondsRemaining ? `${secondsRemaining} сек.` : '',
   ].filter(Boolean).join(' ');
 
   newsSingleContentReadTime.forEach((element) => {
-    element.textContent = `${timeString} на чтение`;
+    element.textContent = `${timeString} чтение`;
   });
 }
 

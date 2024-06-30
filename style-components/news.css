@@ -274,13 +274,13 @@
 .news-single-content-info {
    display: flex;
    align-items: center;
-   gap: clamp(0.6rem, 0.5296rem + 0.3005vw, 0.8rem);
+   gap: clamp(0.5rem, 0.3944rem + 0.4507vw, 0.8rem);
 }
 
 .news-single-content-date,
 .news-single-content-word-count,
 .news-single-content-read-time {
-   font-size: clamp(1rem, 0.9718rem + 0.1202vw, 1.08rem);
+   font-size: clamp(0.965rem, 0.9298rem + 0.1502vw, 1.065rem);
 }
 
 .news-single-content-text a {

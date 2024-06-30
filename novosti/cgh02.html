@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta 
+      name="description" 
+      content="Добро пожаловать на официальный сайт Свято-Георгиевского храма, пгт. Афипского."
+   />
+
+   <!-- Favicon -->
+   <link rel="icon" type="image/png" href="../src/images/favicon-white.png">
+   
+   <link rel="stylesheet" href="../style-components/resets.css">
+   <link rel="stylesheet" href="../style-components/style.css">
+   <link rel="stylesheet" href="../style-components/news.css">
+
+   <!-- Fontawesome icon -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <title>Новости - Свято-Георгиевский храм | пгт. Афипского</title>
+</head>
+<body>
+   <div class="preloader">
+      <div class="preloader-spinner"></div>
+   </div>
+   <!-- PRELOADER -->
+
+   <header class="news-single-header">
+      <h2 class="news-single-header-title">
+         Новости
+      </h2>
+      <!-- <p class="news-single-header-subtitle"></p> -->
+   </header>
+   <!-- HEADER -->
+
+   <main class="main news-single-container" role="main">
+      <a href="../index.html#novosti" class="news-single-btn">
+         <i class="fa-solid fa-arrow-left"></i> 
+         Вернуться к новостям
+      </a>
+
+      <section class="carousel-container">
+         <div class="carousel-wrapper">
+            <div class="carousel-inner">
+               <!-- Carousel items -->
+               <figure class="carousel-item carouselItemActive">
+                  <img src="../src/images/news-img10.jpg" loading="eager" alt="Фото волонтеров храма">
+               </figure>
+
+               <figure class="carousel-item">
+                  <img src="../src/images/news-img11.jpg" loading="lazy" alt="Фото волонтеров храма">
+               </figure>
+
+               <figure class="carousel-item">
+                  <img src="../src/images/news-img12.jpg" loading="lazy" alt="Фото волонтеров храма">
+               </figure>
+
+               <figure class="carousel-item">
+                  <img src="../src/images/news-img14.jpg" loading="lazy" alt="Фото волонтеров храма">
+               </figure>
+            </div>
+            <!-- Carousel navigation -->
+            <div class="carousel-nav">
+               <button class="carousel-prev" type="button">
+                  <i class="fa-solid fa-chevron-left"></i>
+               </button>
+               
+               <button class="carousel-next" type="button">
+                  <i class="fa-solid fa-chevron-right"></i>
+               </button>
+            </div>
+            <!-- Carousel pagination -->
+            <div class="carousel-pagination">
+               <button class="carousel-pagination-item carouselPaginationItemActive" type="button"></button>
+               <button class="carousel-pagination-item" type="button"></button>
+               <button class="carousel-pagination-item" type="button"></button>
+               <button class="carousel-pagination-item" type="button"></button>
+            </div>
+         </div>
+      </section>
+      <!-- CAROUSEL CONTAINER -->
+
+      <section class="news-single-content-container">
+         <div class="news-single-content-heading-container">
+            <h2 class="news-single-content-title">
+               Шьем, плетем, ждем вас
+            </h2>
+            
+            <div class="news-single-content-info">
+               <p class="news-single-content-date">
+                  <time datetime="2024-06-21">21.06.2024</time>
+               </p>
+
+               <div class="news-single-content-divider"></div>
+
+               <p class="news-single-content-word-count"></p>
+
+               <div class="news-single-content-divider"></div>
+
+               <p class="news-single-content-read-time"></p>
+            </div>
+         </div>
+
+         <div class="news-single-content-text-container">
+            <p class="news-single-content-text">
+               Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы. 
+            </p>
+
+            <p class="news-single-content-text">
+               А пока кроим всё, чтобы не останавливаться процесс пошива одеял. Кроим и шьём шорты. Плетем сети в МФЦ. 
+            </p>
+
+            <figure>
+               <img src="../src/images/news-img14.jpg" alt="Фото процесса резки" loading="lazy" class="new-single-content-image">
+               <figcaption>Фото в МФЦ</figcaption>
+            </figure>
+
+            <p class="news-single-content-text">
+               Все еще очень нужны волонтеры. Все подключаемся! Время тяжелое, и наши бойцы очень нуждаются в поддержке и конкреиной помощи. 
+            </p>
+
+            <p class="news-single-content-text">
+               Ирина Новикова, руководитель Мастерской Святогеоргиевского храма. Телефон Мастерской: <a href="tel:+7 916 750-43-24">+7 916 750-43-24</a>. Карта Сбербанка для финансовой помощи мастерской нашего храма 5228600529398606 с пометкой <b>"на СВО"</b> (обязательно), получатель Андрей Петрович Б. 
+            </p>
+
+            <!-- <div class="news-single-content-text-divider"></div> -->
+
+            <p class="news-single-content-author italics">- Ирина Новикова</p>
+         </div>
+      </section>
+      <!-- NEWS SINGLE TEXT CONTAINER -->
+   </main>
+   <!-- MAIN -->
+
+   <button type="button" class="scrollup-btn" title="Кнопка прокрутки вверх" aria-label="Кнопка прокрутки вверх">
+      Наверх
+      <i class="fa-solid fa-angle-up" aria-label="Значок прокрутки вверх"></i>
+   </button>
+   <!-- SCROLL UP BUTTON -->
+
+
+   <script src="../src/novosti.js" type="text/javascript"></script>
+</body>
+</html>
