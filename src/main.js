@@ -137,52 +137,6 @@ showMoreButton.forEach((btn) => {
 })
 
 
-// // Get initial click counts from local storage
-// const clickCounts = JSON.parse(localStorage.getItem('clickCounts')) || {};
-
-// // Add event listeners to each button
-// newsCardBtns.forEach((btn) => {
-//   btn.addEventListener('click', (e) => {
-//     const href = e.target.getAttribute('href');
-//     if (!clickCounts[href]) {
-//       clickCounts[href] = 0;
-//     }
-//     if (!localStorage.getItem(`clicked_${href}`)) {
-//       clickCounts[href]++;
-//       localStorage.setItem(`clicked_${href}`, true);
-//     }
-//     localStorage.setItem('clickCounts', JSON.stringify(clickCounts));
-//     updateViewCounts(href);
-//   });
-// });
-
-// // Function to update the view counts
-// function updateViewCounts(href) {
-//   newsCards.forEach((card) => {
-//     const cardHref = card.querySelector('.news-card-btn').getAttribute('href');
-
-//     if (cardHref === href) {
-//       const viewsNum = card.querySelector('.news-card-views-num');
-//       viewsNum.textContent = clickCounts[href];
-//       const viewsContainer = card.querySelector('.news-card-views-container');
-//       viewsContainer.style.display = 'flex'; // keep it visible
-//     }
-//   });
-// }
-
-// // Initialize view counts on page load
-// newsCards.forEach((card) => {
-//   const cardHref = card.querySelector('.news-card-btn').getAttribute('href');
-//   const viewsNum = card.querySelector('.news-card-views-num');
-//   viewsNum.textContent = clickCounts[cardHref];
-//   const viewsContainer = card.querySelector('.news-card-views-container');
-//   if (clickCounts[cardHref] > 0) {
-//     viewsContainer.style.display = 'flex'; // show if count is greater than 0
-//   }
-// });
-
-
-
 // Highlight schedule card for current day
 scheduleCards.forEach((card) => {
   const dayElement = card.querySelector('.schedule-card-day');
