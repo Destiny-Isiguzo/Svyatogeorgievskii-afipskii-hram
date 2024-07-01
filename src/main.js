@@ -114,6 +114,29 @@ document.querySelectorAll('.news-card-text').forEach((element) => {
   }
 });
 
+
+// Shortening dynamic long title using ellipsis
+document.querySelectorAll('.news-card-title').forEach((element) => {
+  let text = element.textContent;
+  const maxLength = 35;
+  if (text.length > maxLength) {
+    element.textContent = text.substring(0, maxLength) + '...';
+  }
+});
+
+
+// Get the news accordion container and the show more button
+const accordionContainer = document.querySelector('.accordion-container');
+const showMoreButton = document.querySelectorAll('.show-more-btn');
+
+showMoreButton.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    accordionContainer.classList.toggle('accordion-container-active');
+    btn.textContent = accordionContainer.classList.contains('accordion-container-active')? 'Скрыть' : 'Показать еще';
+  })
+})
+
+
 // // Get initial click counts from local storage
 // const clickCounts = JSON.parse(localStorage.getItem('clickCounts')) || {};
 

@@ -44,7 +44,8 @@
 }
 
 .hero-image {
-   border-radius: 50%;
-   height: clamp(17.5rem, 15.9155rem + 6.7606vw, 22rem);
-   width: clamp(17.5rem, 15.9155rem + 6.7606vw, 22rem);
+   border-radius: 1.1rem;
+   height: clamp(30rem, 29.2958rem + 3.0047vw, 32rem);
+   width: 26rem;
+   object-fit: cover;
 }

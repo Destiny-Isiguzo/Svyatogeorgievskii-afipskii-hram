@@ -45,10 +45,10 @@
 
         <div class="nav-menu" role="menu">
           <a href="" class="nav-link">О храме</a>
-          <a href="" class="nav-link">История</a>
+          <!-- <a href="" class="nav-link">История</a> -->
           <a href="" class="nav-link">Святыни</a>
           <a href="#novosti" class="nav-link">Новости</a>
-          <a href="" class="nav-link">Галерея</a>
+          <!-- <a href="" class="nav-link">Галерея</a> -->
           <a href="kontakti.html" class="nav-link">Контакты</a>
         </div>
 
@@ -70,6 +70,7 @@
     <main class="main" role="main">
       <section class="hero-section" aria-label="Основной раздел">
         <img src="src/images/hero-img.jpg" alt="Фото нашего храма" loading="eager" class="hero-image">
+
         <div class="hero-text-container">
           <h1 class="hero-title">Святой Великомученик и Победоносец Георгий, моли Бога o нас!</h1>
 
@@ -94,7 +95,9 @@
         <div class="schedule-heading-container">
           <h2 class="schedule-title">Расписание богослужений</h2>
           
-          <p class="schedule-subtitle">Седмица 1-я по Пятидесятнице. Троицкая седмица</p>
+          <p class="schedule-subtitle">
+            Седмица 2-я по Пятидесятнице. Апостольский пост. 
+          </p>
 
           <p class="schedule-current-day-time" id="schedule-current-day-time"></p>
         </div>
@@ -103,10 +106,12 @@
           <div class="schedule-card">
             <p class="schedule-card-day">Friday</p>
 
-            <h4 class="schedule-card-title">Пятница, 28 июня 2024 г.</h4>
+            <h4 class="schedule-card-title">Пятница, 5 июля 2024 г.</h4>
 
             <ul class="schedule-card-event">
-              <li>Отдание праздника Пятидесятницы. Перенесение мощей свт. Феофана, Затворника Вышенского.</li>
+              <li>
+                Владимирской иконы Божией Матери (празднество установлено в память спасения Москвы от нашествия хана Ахмата в 1480 г.)
+              </li>
             </ul>
 
             <p 
@@ -176,9 +181,9 @@
               <a href="#tab-2" class="tab-btn">Мастерская</a>
             </li>
 
-            <li>
+            <!-- <li>
               <a href="#tab-3" class="tab-btn">Храм</a>
-            </li>
+            </li> -->
 
             <li>
               <a href="#tab-4" class="tab-btn">Поддержка СВО</a>
@@ -188,13 +193,13 @@
               <a href="#tab-5" class="tab-btn">Воскресная школа</a>
             </li> -->
 
-            <li>
+            <!-- <li>
               <a href="#tab-6" class="tab-btn">События</a>
-            </li>
+            </li> -->
           </ul>
   
           <div class="tab-content-container">
-            <div id="tab-1" class="tab-content tab-content1 tabContentActive">  <!-- Главный -->
+            <div id="tab-1" class="tab-content tab-content1 tabContentActive">
               <div class="news-card-list-container">
                 <article class="news-card">
                   <img src="src/images/news-img4.jpg" alt="Фото волонтеров храма" loading="eager" class="news-card-image">
@@ -221,9 +226,33 @@
                     <i class="fa-solid fa-arrow-right"></i>
                   </a>
                 </article>
+
+                <article class="news-card">
+                  <img src="src/images/news-img17.jpg" alt="Фото визита митрополита Василия" loading="eager" class="news-card-image">
+  
+                  <div class="news-card-info-container">
+                    <p class="news-card-date">27.06.2024</p>
+
+                    <div class="news-card-views-container">
+                      <i class="fa-solid fa-eye"></i>
+                      <p class="news-card-views-num"></p>
+                    </div>
+                  </div>
+                  
+                  <h4 class="news-card-title">Северский район посетил митрополит Екатеринодарский и Кубанский Василий</h4>
+        
+                  <p class="news-card-text">
+                    На встрече в посёлке Афипском обсудили возможность строительства православной
+                  </p>
+    
+                  <a href="novosti/cgh03.html" class="news-card-btn">
+                    Читать дальше
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </article>
     
                 <article class="news-card">
-                  <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" loading="lazy" class="news-card-image">
+                  <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" loading="eager" class="news-card-image">
   
                   <div class="news-card-info-container">
                     <p class="news-card-date">21.06.2024</p>
@@ -245,58 +274,42 @@
                     <i class="fa-solid fa-arrow-right"></i>
                   </a>
                 </article>
-    
-                <article class="news-card">
-                  <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" loading="lazy" class="news-card-image">
-  
-                  <div class="news-card-info-container">
-                    <p class="news-card-date">23.06.2024</p>
-
-                    <div class="news-card-views-container">
-                      <i class="fa-solid fa-eye"></i>
-                      <p class="news-card-views-num"></p>
-                    </div>
-                  </div>
-                  
-                  <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
-        
-                  <p class="news-card-text">
-                    Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы
-                  </p>
-    
-                  <a href="" class="news-card-btn">
-                    Читать дальше
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </a>
-                </article>
-    
-                <article class="news-card">
-                  <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" loading="lazy" class="news-card-image">
-  
-                  <div class="news-card-info-container">
-                    <p class="news-card-date">23.06.2024</p>
-
-                    <div class="news-card-views-container">
-                      <i class="fa-solid fa-eye"></i>
-                      <p class="news-card-views-num"></p>
-                    </div>
-                  </div>
-                  
-                  <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
-        
-                  <p class="news-card-text">
-                    Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы
-                  </p>
-    
-                  <a href="" class="news-card-btn">
-                    Читать дальше
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </a>
-                </article>
               </div>
-            </div>
+
+              <!-- <div class="news-card-list-container accordion-container">
+                <article class="news-card">
+                  <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" loading="lazy" class="news-card-image">
   
-            <div id="tab-2" class="tab-content tab-content2"> <!-- Мастерская -->
+                  <div class="news-card-info-container">
+                    <p class="news-card-date">23.06.2024</p>
+
+                    <div class="news-card-views-container">
+                      <i class="fa-solid fa-eye"></i>
+                      <p class="news-card-views-num"></p>
+                    </div>
+                  </div>
+                  
+                  <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
+        
+                  <p class="news-card-text">
+                    Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы
+                  </p>
+    
+                  <a href="" class="news-card-btn">
+                    Читать дальше
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </article>
+              </div> -->
+
+              <!-- <button type="button" class="show-more-btn">
+                Показать еще
+                <i class="fa-solid fa-chevron-down"></i>
+              </button> -->
+            </div>
+            <!-- Главный -->
+  
+            <div id="tab-2" class="tab-content tab-content2">
               <div class="news-card-list-container">
                 <article class="news-card">
                   <img src="src/images/news-img4.jpg" alt="Фото волонтеров храма" loading="lazy" class="news-card-image">
@@ -349,8 +362,9 @@
                 </article>
               </div>
             </div>
+            <!-- Мастерская -->
   
-            <div id="tab-3" class="tab-content tab-content3"> <!-- Храм -->
+            <!-- <div id="tab-3" class="tab-content tab-content3">
               <div class="news-card-list-container">
                 <article class="news-card">
                   <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" loading="lazy" class="news-card-image">
@@ -369,16 +383,17 @@
                   </a>
                 </article>
               </div>
-            </div>
+            </div> -->
+            <!-- Храм -->
   
-            <div id="tab-4" class="tab-content tab-content4"> <!-- Поддержка СВО -->
+            <div id="tab-4" class="tab-content tab-content4">
               <div class="news-card-list-container">
                 <article class="news-card">
-                  <img src="src/images/news-img4.jpg" alt="Фото волонтеров храма" loading="lazy" class="news-card-image">
+                  <img src="src/images/news-img15.jpg" alt="Поддержка СВО" loading="lazy" class="news-card-image support-CBO-image">
   
                   <div class="news-card-info-container">
                     <p class="news-card-date">
-                      <time datetime="2024-06-27">27.06.2024</time>
+                      <time datetime="2024-06-29">29.06.2024</time>
                     </p>
 
                     <div class="news-card-views-container">
@@ -387,21 +402,22 @@
                     </div>
                   </div>
                   
-                  <h4 class="news-card-title">Эта война коснется каждого</h4>
+                  <!-- <h4 class="news-card-title">Эта война коснется каждого</h4> -->
         
-                  <p class="news-card-text">
+                  <!-- <p class="news-card-text">
                     В этом месяце на помощь нашим бойцам СВО поступило 112 600р. Из них безналичными 77 300р. и наличными 35 300р.
-                  </p>
+                  </p> -->
   
-                  <a href="novosti/cgh01.html" class="news-card-btn">
+                  <!-- <a href="novosti/cgh01.html" class="news-card-btn">
                     Читать дальше
                     <i class="fa-solid fa-arrow-right"></i>
-                  </a>
+                  </a> -->
                 </article>
               </div>
             </div>
+            <!-- Поддержка СВО -->
   
-            <div id="tab-5" class="tab-content tab-content5"> <!-- Воскресная школа -->
+            <!-- <div id="tab-5" class="tab-content tab-content5">
               <div class="news-card-list-container">
                 <article class="news-card">
                   <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" loading="lazy" class="news-card-image">
@@ -420,9 +436,10 @@
                   </a>
                 </article>
               </div>
-            </div>
+            </div> -->
+            <!-- Воскресная школа -->
   
-            <div id="tab-6" class="tab-content tab-content6"> <!-- События -->
+            <!-- <div id="tab-6" class="tab-content tab-content6">
               <div class="news-card-list-container">
                 <article class="news-card">
                   <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" loading="lazy" class="news-card-image">
@@ -441,7 +458,8 @@
                   </a>
                 </article>
               </div>
-            </div>
+            </div> -->
+            <!-- События -->
           </div>
         </div>
       </section>
@@ -475,7 +493,7 @@
     <!-- FOOTER -->
 
     <button type="button" class="scrollup-btn" title="Кнопка прокрутки вверх" aria-label="Кнопка прокрутки вверх">
-      Наверх
+      <!-- Наверх -->
       <i class="fa-solid fa-angle-up" aria-label="Значок прокрутки вверх"></i>
     </button>
     <!-- SCROLL UP BUTTON -->

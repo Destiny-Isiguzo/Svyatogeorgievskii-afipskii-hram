@@ -1,6 +1,6 @@
 .header {
   background-color: var(--body-color);
-  border: .7px solid transparent;
+  border-bottom: .7px solid transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -100,7 +100,6 @@
   font-size: clamp(0.9rem, 0.8824rem + 0.0751vw, 0.95rem);
   font-weight: 500;
   font-family: var(--ff-nav);
-  outline: none;
   padding: .57rem .7rem;
   transition: var(--general-transition);
   position: absolute;
@@ -147,7 +146,6 @@
   font-size: clamp(0.9rem, 0.8824rem + 0.0751vw, 0.95rem);
   font-weight: 500;
   font-family: var(--ff-nav);
-  outline: none;
   padding: .57rem .7rem;
   transition: var(--general-transition);
 }
@@ -166,7 +164,7 @@
 
 .header-active {
   /* box-shadow: 0 2.5px 25px rgba(0 0 0 / .06); */
-  border: .7px solid rgba(0 0 0/ .15);
+  border-bottom: .7px solid rgba(0 0 0/ .15);
 }
 
 
