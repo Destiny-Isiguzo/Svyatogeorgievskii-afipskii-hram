@@ -64,7 +64,7 @@
    display: flex;
    align-items: center;
    flex-wrap: wrap;
-   gap: 1.5rem;
+   gap: 1.7rem;
 }
 
 .news-card {
@@ -129,7 +129,7 @@
 
 .accordion-container {
    max-height: 0;
-   margin-top: 1.5rem;
+   margin-top: 1.7rem;
    overflow-y: hidden;
    transition: max-height .4s ease;
 }
