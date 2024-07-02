@@ -108,7 +108,7 @@ tabBtns.forEach((btn, index) => {
 // Shortening dynamic long texts using ellipsis
 document.querySelectorAll('.news-card-text').forEach((element) => {
   let text = element.textContent;
-  const maxLength = 100;
+  const maxLength = 95;
   if (text.length > maxLength) {
     element.textContent = text.substring(0, maxLength) + '...';
   }

@@ -146,7 +146,7 @@ function calculateReadingTime() {
   ].filter(Boolean).join(' ');
 
   newsSingleContentReadTime.forEach((element) => {
-    element.textContent = `${timeString} на чтение`;
+    element.textContent = `${timeString} чтение`;
   });
 }
 

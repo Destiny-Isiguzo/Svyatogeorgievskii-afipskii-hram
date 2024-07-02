@@ -119,13 +119,9 @@
 }
 
 .contact-content-link:nth-child(2) i {
-   color: green;
-}
-
-.contact-content-link:nth-child(3) i {
    color: rgb(0, 191, 255);
 }
 
-.contact-content-link:nth-child(4) i {
+.contact-content-link:nth-child(3) i {
    color: var(--calm-black-color);
 }

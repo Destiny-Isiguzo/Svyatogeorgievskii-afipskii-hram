@@ -31,14 +31,10 @@
 }
 
 .footer-social-link:nth-child(2) {
-   color: green;
-}
-
-.footer-social-link:nth-child(3) {
    color: rgb(0, 191, 255);
 }
 
-.footer-social-link:nth-child(4) {
+.footer-social-link:nth-child(3) {
    color: var(--calm-black-color);
 }
 
