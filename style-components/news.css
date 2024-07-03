@@ -135,7 +135,7 @@
 }
 
 .accordion-container-active {
-   max-height: 60vh;
+   max-height: max-content;
 }
 
 .show-more-btn {
@@ -181,7 +181,9 @@
 /*  NEWS SINGLES STYLES  */
 .news-single-container {
    padding-block: 1.5rem 2rem;
-   padding-inline: clamp(0.8rem, -7.7211rem + 36.3568vw, 25rem);
+   padding-inline: var(--padding-inline);
+   margin: auto;
+   max-width: 63rem;
 }
 
 .news-single-header {
@@ -265,19 +267,19 @@
 .carousel-next {
    background-color: var(--calm-black-color);
    border-radius: 50%;
-   border: .57px solid var(--white-color);
+   border: none;
    cursor: pointer;
    display: flex;
    align-items: center;
    justify-content: center;
-   width: clamp(2.7rem, 2.5944rem + 0.4507vw, 3rem);
-   height: clamp(2.7rem, 2.5944rem + 0.4507vw, 3rem);
+   width: 2.7rem;
+   height: 2.7rem;
 }
 
 .carousel-prev i,
 .carousel-next i {
    color: var(--white-color);
-   font-size: clamp(1rem, 0.8944rem + 0.4507vw, 1.3rem);
+   font-size: clamp(1rem, 0.9472rem + 0.2254vw, 1.15rem);
 }
  
 .carousel-pagination {
@@ -300,8 +302,8 @@
  
 .carousel-pagination-item.carouselPaginationItemActive {
    background-color: var(--black-color);
-   border-radius: .2rem;
-   height: 8px;
+   border-radius: .25rem;
+   height: 7.5px;
    width: 16.5px;
 }
 

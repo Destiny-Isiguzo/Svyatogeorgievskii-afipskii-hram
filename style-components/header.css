@@ -1,6 +1,7 @@
 .header {
   background-color: var(--body-color);
   border-bottom: .7px solid transparent;
+  box-shadow: 0 2px 20px 0 transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -163,7 +164,7 @@
 }
 
 .header-active {
-  /* box-shadow: 0 2.5px 25px rgba(0 0 0 / .06); */
+  /* box-shadow: 0 1.5px 25px 0 rgba(0 0 0 / .05); */
   border-bottom: .7px solid rgba(0 0 0/ .15);
 }
 
