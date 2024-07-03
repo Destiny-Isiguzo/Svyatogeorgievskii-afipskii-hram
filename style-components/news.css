@@ -113,7 +113,6 @@
    color: var(--black-color);
    font-size: var(--fs-navs);
    font-weight: 500;
-   text-decoration: underline;
    transition: var(--general-transition);
    width: max-content;
 }
@@ -125,6 +124,7 @@
 
 .news-card-btn:is(:hover, :active) {
    color: var(--btn-bg);
+   text-decoration: underline;
 }
 
 .accordion-container {

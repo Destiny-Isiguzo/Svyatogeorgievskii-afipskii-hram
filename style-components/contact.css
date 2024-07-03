@@ -19,7 +19,9 @@
 
 .contact-container {
    padding-block: 1.5rem 2rem;
-   padding-inline: clamp(0.8rem, -7.7211rem + 36.3568vw, 25rem);
+   padding-inline: var(--padding-inline);
+   margin: auto;
+   max-width: 63rem;
 }
 
 .contact-section {
@@ -115,13 +117,13 @@
 }
 
 .contact-content-link:nth-child(1) i {
-   color: rgb(22, 22, 212);
-}
-
-.contact-content-link:nth-child(2) i {
    color: rgb(0, 191, 255);
 }
 
-.contact-content-link:nth-child(3) i {
+.contact-content-link:nth-child(2) i {
    color: var(--calm-black-color);
+}
+
+.contact-content-link:nth-child(3) i {
+   color: rgb(22, 22, 212);
 }

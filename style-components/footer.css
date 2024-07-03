@@ -27,15 +27,15 @@
 }
 
 .footer-social-link:nth-child(1) {
-   color: rgb(22, 22, 212);
-}
-
-.footer-social-link:nth-child(2) {
    color: rgb(0, 191, 255);
 }
 
-.footer-social-link:nth-child(3) {
+.footer-social-link:nth-child(2) {
    color: var(--calm-black-color);
+}
+
+.footer-social-link:nth-child(3) {
+   color: rgb(22, 22, 212);
 }
 
 

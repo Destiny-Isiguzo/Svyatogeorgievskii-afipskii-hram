@@ -31,6 +31,7 @@ ol[role='list'] {
 html:focus-within,
 html {
 	scroll-behavior: smooth;
+	scroll-padding-top: 35px;
 }
 
 /* Set core body defaults */
@@ -46,7 +47,6 @@ a:not([class]) {
 
 a {
 	text-decoration: none;
-	/* display: inline-block; */
 }
 
 /* Make images easier to work with */

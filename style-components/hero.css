@@ -6,7 +6,7 @@
    gap: 1rem;
    padding-top: clamp(4rem, 3.2958rem + 3.0047vw, 6rem);
    padding-inline: var(--padding-inline);
-   padding-bottom: clamp(3rem, 1.9437rem + 4.5070vw, 6rem);
+   padding-bottom: clamp(4rem, 3.2958rem + 3.0047vw, 6rem);
    overflow: hidden;
 }
 
@@ -49,9 +49,11 @@
    height: clamp(30rem, 29.2958rem + 3.0047vw, 32rem);
    width: clamp(26rem, 25.6479rem + 1.5023vw, 27rem);
    object-fit: cover; */
-   height: clamp(21rem, 18.8873rem + 9.0141vw, 27rem);
-   width: clamp(21rem, 18.8873rem + 9.0141vw, 27rem);
-   border-radius: 50%;
+   /* height: clamp(21rem, 18.8873rem + 9.0141vw, 27rem); */
+   height: clamp(26rem, 23.7113rem + 9.7653vw, 32.5rem);
+   width: clamp(22rem, 20.2394rem + 7.5117vw, 27rem);
+   border-radius: 1rem;
+   object-fit: cover;
 }
 
 
@@ -78,6 +80,6 @@
 /* breakpoint 1380px media query */
 @media screen and (min-width: 86.25em) {
    .hero-text-container {
-      max-width: 44rem;
+      max-width: 43rem;
    }
 }
