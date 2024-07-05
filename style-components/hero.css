@@ -45,15 +45,14 @@
 }
 
 .hero-image {
-   /* border-radius: 1.1rem;
-   height: clamp(30rem, 29.2958rem + 3.0047vw, 32rem);
-   width: clamp(26rem, 25.6479rem + 1.5023vw, 27rem);
-   object-fit: cover; */
-   /* height: clamp(21rem, 18.8873rem + 9.0141vw, 27rem); */
+   background-color: var(--white-color);
+   box-shadow: 0 2.5px 20px 0 rgba(0 0 0 / .06);
+   border: .7px solid rgba(0 0 0/ .08);
    height: clamp(26rem, 23.7113rem + 9.7653vw, 32.5rem);
    width: clamp(22rem, 20.2394rem + 7.5117vw, 27rem);
-   border-radius: 1rem;
+   border-radius: 1.5rem;
    object-fit: cover;
+   padding: .8rem;
 }
 
 

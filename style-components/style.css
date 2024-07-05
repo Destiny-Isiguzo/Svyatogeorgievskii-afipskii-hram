@@ -105,41 +105,15 @@ body {
    border-radius: .5rem;
 }
 
-.video-image-container {
-   padding-block: 2rem;
-   position: relative;
-   padding-inline: var(--padding-inline);
-}
-
-.video-image {
-   border-radius: 1rem;
+iframe {
    display: block;
-   position: relative;
-   height: 27rem;
-   width: 50rem;
+   padding-inline: var(--padding-inline);
+   padding-bottom: 3rem;
    margin: auto;
-   object-fit: cover;
+   height: clamp(17rem, 12.4225rem + 19.5305vw, 30rem);
+   max-width: 70rem;
+   width: 100%;
 }
-
-.video-image-container a {
-   background-color: var(--white-color);
-   border-radius: 50%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   width: 4rem;
-   height: 4rem;
-   transform: translate(-50%, -50%);
-}
-
-.video-image-container i {
-   color: var(--black-color);
-   font-size: 2.2rem;
-}
-
 
 
 /* Scrollup button */
