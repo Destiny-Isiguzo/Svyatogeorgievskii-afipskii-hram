@@ -121,7 +121,6 @@
 
 .news-card-btn:is(:hover, :active) {
    color: var(--btn-bg);
-   text-decoration: underline;
 }
 
 .accordion-container {
@@ -164,7 +163,7 @@
 
 /*  NEWS SINGLES STYLES  */
 .news-single-container {
-   padding-block: 1.5rem 2rem;
+   padding-block-end: 2rem;
    padding-inline: var(--padding-inline);
    margin: auto;
    max-width: 63rem;
@@ -192,19 +191,16 @@
 .news-single-btn {
    color: var(--black-color);
    font-size: var(--fs-navs);
-   font-weight: 500;
-   text-decoration: underline;
    transition: var(--general-transition);
+   position: absolute;
+   left: clamp(0.625rem, -2.6761rem + 14.0845vw, 10rem);
+   font-size: clamp(0.9rem, 0.8824rem + 0.0751vw, 0.95rem);
+   padding: .4rem .7rem;
    width: max-content;
 }
 
 .news-single-btn i {
-   font-size: .87rem;
-   margin-right: .25rem;
-}
-
-.news-single-btn:is(:hover, :active) {
-   color: var(--btn-bg);
+   font-size: 1.15rem;
 }
 
 .carousel-container {
@@ -249,8 +245,7 @@
  
 .carousel-prev, 
 .carousel-next {
-   background-color: var(--calm-black-color);
-   border-radius: 50%;
+   background-color: transparent;
    border: none;
    cursor: pointer;
    display: flex;
@@ -263,7 +258,7 @@
 .carousel-prev i,
 .carousel-next i {
    color: var(--white-color);
-   font-size: clamp(1rem, 0.9472rem + 0.2254vw, 1.15rem);
+   font-size: 1.2rem;
 }
  
 .carousel-pagination {

@@ -1,6 +1,6 @@
 .header {
   background-color: var(--body-color);
-  border-bottom: .7px solid rgba(0 0 0/ .15);
+  border-bottom: .7px solid transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,6 +40,7 @@
   align-items: center;
   flex-direction: column;
   row-gap: 1.7rem;
+  position: relative;
 }
 
 .nav-menu-subtitle {
@@ -84,9 +85,9 @@
   transition: var(--general-transition);
 }
 
-.nav-link:is(:hover, :active) {
+.nav-link:is(:hover, :active),
+.nav-menu-btn:hover {
   color: var(--btn-bg);
-  text-decoration: underline;
 }
 
 .nav-menu-btn {
@@ -102,36 +103,47 @@
   font-weight: 500;
   outline: none;
   transition: var(--general-transition);
-  position: relative;
   overflow: hidden;
 }
 
-.nav-menu-btn:hover {
-  color: var(--btn-bg);
-  text-decoration: underline;
+.nav-menu-btn-icon {
+  font-size: .9rem;
+  transition: all .3s ease;
+}
+
+.nav-menu-btn-icon-active {
+  transform: rotate(-180deg);
 }
 
 .nav-menu-submenu {
   background-color: var(--white-color);
   border-radius: var(--border-radius);
+  border: .7px solid rgba(0 0 0/ .15);
   box-shadow: 0 1.5px 25px 0 rgba(0 0 0 / .07);
   display: flex;
   flex-direction: column;
-  gap: .6rem;
+  gap: .8rem;
   position: absolute;
-  top: 5rem;
-  padding: 1rem;
-  z-index: var(--z-tooltip);
+  top: 6rem;
+  padding-inline: 1.2rem;
+  z-index: var(--z-fixed);
   text-align: left;
   overflow: hidden;
-  width: clamp(21rem, 18.7113rem + 9.7653vw, 27.5rem);
+  opacity: 0;
+  height: 0;
+  width: 20rem;
+  transition: opacity .2s ease, height .2s ease;
+}
+
+.nav-menu-submenu-active {
+  opacity: 1;
+  height: auto;
+  padding-block: 1.5rem;
 }
 
 .nav-menu-submenu-link {
-  font-size: .95rem;
+  font-size: .955rem;
 }
-
-.nav-menu-submenu-active {}
 
 .close-nav-btn {
   background-color: var(--btn-bg);
@@ -154,10 +166,6 @@
 
 .close-nav-btn i {
   font-size: .87rem;
-}
-
-.close-nav-btn:hover {
-  text-decoration: underline;
 }
 
 
@@ -199,16 +207,12 @@
   font-size: .87rem;
 }
 
-.open-nav-btn:hover {
-  text-decoration: underline;
-}
-
 .show-menu {
   transform: translateY(0);
 }
 
 .header-active {
-  box-shadow: 0 1.5px 25px 0 rgba(0 0 0 / .05);
+  /* box-shadow: 0 1.5px 25px 0 rgba(0 0 0 / .05); */
   border-bottom: .7px solid rgba(0 0 0/ .15);
 }
 
@@ -230,5 +234,10 @@
 
   .nav-menu {
     flex-direction: row;
+  }
+
+  .nav-menu-submenu {
+    top: 3.5rem;
+    left: 4.5rem;
   }
 }

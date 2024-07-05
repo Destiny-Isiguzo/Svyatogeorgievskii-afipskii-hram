@@ -36,7 +36,7 @@
    border: .7px solid transparent;
    border-radius: var(--btn-border-radius);
    color: var(--white-color);
-   padding: .55rem;
+   padding: .55rem .8rem;
 }
 
 .hero-btn i {
@@ -52,7 +52,7 @@
    width: clamp(22rem, 20.2394rem + 7.5117vw, 27rem);
    border-radius: 1.5rem;
    object-fit: cover;
-   padding: .8rem;
+   padding: .5rem;
 }
 
 

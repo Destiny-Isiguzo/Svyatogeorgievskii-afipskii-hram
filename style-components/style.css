@@ -36,7 +36,7 @@
 
 
    /* SPACING */
-   --btn-border-radius: .35rem;
+   --btn-border-radius: .7rem;
    --btn-padding: clamp(0.65rem, 0.6148rem + 0.1502vw, 0.75rem) clamp(0.64rem, 0.5132rem + 0.5408vw, 1rem);
    --padding-inline: clamp(0.625rem, -2.6761rem + 14.0845vw, 10rem);
    --navs-padding-inline: clamp(0.8rem, -1.3831rem + 9.3146vw, 7rem);
