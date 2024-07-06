@@ -8,9 +8,6 @@ const main = document.querySelector('.main');
 const navMenu = document.querySelector('.nav-menu-container');
 const navMenuOverlay = document.querySelector('.nav-menu-container-overlay'); 
 const navBtns = document.querySelectorAll('.open-nav-btn, .close-nav-btn'); 
-const navMenuBtn = document.querySelector('.nav-menu-btn');
-const navMenuSubMenu = document.querySelector('.nav-menu-submenu');
-const navMenuBtnIcon = document.querySelector('.nav-menu-btn-icon');
 const preloader = document.querySelector('.preloader'); 
 const scrollUpBtn = document.querySelector('.scrollup-btn'); 
 const scheduleCards = document.querySelectorAll('.schedule-card');
@@ -60,20 +57,8 @@ function toggleNavMenu() {
     if (e.target.classList.contains('nav-link')) {
       navMenu.classList.remove('show-menu');
       navMenuOverlay.classList.remove('nav-overlay-show');
-      navMenuSubMenu.classList.remove('nav-menu-submenu-active');
-      navMenuBtnIcon.classList.remove('nav-menu-btn-icon-active');
     }
   });
-}
-
-/**
- * Toggle dropdown menu
-*/
-function toggleDropdownMenu() {
-  navMenuBtn.addEventListener('click', () => {
-    navMenuSubMenu.classList.toggle('nav-menu-submenu-active');
-    navMenuBtnIcon.classList.toggle('nav-menu-btn-icon-active');
-  })
 }
 
 /**
@@ -100,7 +85,6 @@ window.addEventListener('load', () => {
   addFadeOutClass(preloader);
   showHeaderAndMain();
   toggleNavMenu();
-  toggleDropdownMenu()
 });
 
 window.addEventListener('scroll', handleScroll);

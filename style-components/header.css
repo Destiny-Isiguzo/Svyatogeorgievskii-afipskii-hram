@@ -90,61 +90,6 @@
   color: var(--btn-bg);
 }
 
-.nav-menu-btn {
-  background-color: transparent;
-  border: none;
-  color: var(--text-color);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: .3rem;
-  font-size: var(--fs-nav);
-  font-family: var(--ff-nav);
-  font-weight: 500;
-  outline: none;
-  transition: var(--general-transition);
-  overflow: hidden;
-}
-
-.nav-menu-btn-icon {
-  font-size: .9rem;
-  transition: all .3s ease;
-}
-
-.nav-menu-btn-icon-active {
-  transform: rotate(-180deg);
-}
-
-.nav-menu-submenu {
-  background-color: var(--white-color);
-  border-radius: var(--border-radius);
-  border: .7px solid rgba(0 0 0/ .15);
-  box-shadow: 0 1.5px 25px 0 rgba(0 0 0 / .07);
-  display: flex;
-  flex-direction: column;
-  gap: .8rem;
-  position: absolute;
-  top: 6rem;
-  padding-inline: 1.2rem;
-  z-index: var(--z-fixed);
-  text-align: left;
-  overflow: hidden;
-  opacity: 0;
-  height: 0;
-  width: 20rem;
-  transition: opacity .2s ease, height .2s ease;
-}
-
-.nav-menu-submenu-active {
-  opacity: 1;
-  height: auto;
-  padding-block: 1.5rem;
-}
-
-.nav-menu-submenu-link {
-  font-size: .955rem;
-}
-
 .close-nav-btn {
   background-color: var(--btn-bg);
   border-radius: var(--btn-border-radius);

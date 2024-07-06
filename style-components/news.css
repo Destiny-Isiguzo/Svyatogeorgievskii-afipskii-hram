@@ -59,9 +59,11 @@
 }
 
 .news-card-list-container {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-   gap: 2.5rem;
+   /* display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); */
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.7rem;
 }
 
 .news-card {
@@ -157,6 +159,7 @@
 @media screen and (max-width: 58.125em) {
    .news-card-list-container {
       justify-content: center;
+      gap: 2.7rem;
    }
 }
 
