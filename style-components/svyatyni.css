@@ -1,0 +1,122 @@
+.svyatyni-single-header {
+   background-color: var(--body-color);
+   border-bottom: .7px solid rgba(0 0 0/ .15);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: clamp(3.9rem, 3.5831rem + 1.3521vw, 4.8rem);
+   position: sticky;
+   top: 0;
+   z-index: var(--z-fixed);
+}
+
+.svyatyni-single-btn {
+   color: var(--black-color);
+   font-size: var(--fs-navs);
+   transition: var(--general-transition);
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   left: clamp(0.625rem, -2.6761rem + 14.0845vw, 10rem);
+   font-size: clamp(0.9rem, 0.8824rem + 0.0751vw, 0.95rem);
+   padding: .4rem .7rem;
+   width: max-content;
+}
+
+.svyatyni-single-btn i {
+   font-size: 1.15rem;
+   transition: var(--general-transition);
+}
+
+.svyatyni-single-btn i:is(:hover, :active) {
+   color: var(--btn-bg);
+}
+
+.svyatyni-single-header-title {
+   color: var(--title-color);
+   font-weight: 500;
+   font-family: var(--ff-heading);
+   font-size: var(--fs-section-subtitle);
+}
+
+.svyatyni-single-container {
+   padding-block-end: 2rem;
+   padding-inline: var(--padding-inline);
+   margin: auto;
+   max-width: 63rem;
+}
+
+/* Carousel container styles */
+.carousel-container {
+  position: relative;
+  width: 800px; /* Set the width of the carousel */
+  height: 600px; /* Set the height of the carousel */
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+/* Carousel inner wrapper styles */
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Carousel item styles */
+.carousel-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Carousel navigation button styles */
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.carousel-prev {
+  left: 20px;
+}
+
+.carousel-next {
+  right: 20px;
+}
+
+/* Carousel pagination styles */
+.carousel-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-pagination-item {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.carousel-pagination-item.carousel-pagination-item-active {
+  background-color: #333;
+}

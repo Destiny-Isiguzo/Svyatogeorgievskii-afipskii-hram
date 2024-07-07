@@ -10,6 +10,26 @@
    z-index: var(--z-fixed);
 }
 
+.contact-btn {
+   color: var(--black-color);
+   position: absolute;
+   left: clamp(0.625rem, -2.6761rem + 14.0845vw, 10rem);
+   top: 50%;
+   transform: translateY(-50%);
+   padding-left: .7rem;
+   width: max-content;
+   transition: var(--general-transition);
+}
+
+.contact-btn i {
+   font-size: 1.15rem;
+   transition: var(--general-transition);
+}
+
+.contact-btn i:is(:hover, :active) {
+   color: var(--btn-bg);
+}
+
 .contact-header-title {
    color: var(--title-color);
    font-weight: 500;
@@ -28,24 +48,6 @@
    display: flex;
    flex-direction: column;
    gap: 2.5rem;
-}
-
-.contact-btn {
-   color: var(--black-color);
-   font-size: var(--fs-navs);
-   font-weight: 500;
-   text-decoration: underline;
-   transition: var(--general-transition);
-   width: max-content;
-}
-
-.contact-btn i {
-   font-size: .87rem;
-   margin-right: .25rem;
-}
-
-.contact-btn:is(:hover, :active) {
-   color: var(--btn-bg);
 }
 
 .contact-content-container {
