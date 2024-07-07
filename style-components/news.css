@@ -223,7 +223,7 @@
  
 .carousel-inner {
    display: flex;
-   transition: var(--general-transition);
+   transition: all .85s ease;
 }
  
 .carousel-item {
@@ -266,7 +266,7 @@
 .carousel-prev i,
 .carousel-next i {
    color: var(--white-color);
-   font-size: 1.2rem;
+   font-size: 1.5rem;
 }
  
 .carousel-pagination {

@@ -38,34 +38,42 @@
     <!-- HEADER -->
 
     <main class="main svyatyni-single-container" role="main">
-      <div class="carousel-container">
-        <!-- Carousel inner wrapper -->
-        <div class="carousel-inner">
-          <!-- Carousel items -->
-          <figure class="carousel-item">
-            <img src="src/images/alekcandr-fleginskiy-img.jpg" alt="Image 1">
-          </figure>
+      <section class="carousel-container">
+        <div class="carousel-wrapper">
+          <div class="carousel-inner">
+            <figure class="carousel-item">
+              <img src="src/images/alekcandr-fleginskiy-img.jpg" alt="Александр Флегинский">
+            </figure>
+  
+            <figure class="carousel-item">
+              <img src="src/images/alekcandr-fleginskiy-img2.jpg" alt="Александр Флегинский">
+            </figure>
+  
+            <figure class="carousel-item">
+              <img src="src/images/alekcandr-fleginskiy-img3.jpg" alt="Александр Флегинский">
+            </figure>
+          </div>
+  
+          <div class="carousel-nav">
+            <button type="button" class="carousel-prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
 
-          <figure class="carousel-item">
-            <img src="src/images/alekcandr-fleginskiy-img2.jpg" alt="Image 2">
-          </figure>
+            <button type="button" class="carousel-next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+  
+          <div class="carousel-pagination">
+            <button type="button" class="carousel-pagination-item carousel-pagination-item-active"></button>
 
-          <figure class="carousel-item">
-            <img src="src/images/alekcandr-fleginskiy-img3.jpg" alt="Image 3">
-          </figure>
-          <!-- Add more carousel items here -->
+            <button type="button" class="carousel-pagination-item"></button>
+
+            <button type="button" class="carousel-pagination-item"></button>
+          </div>
         </div>
-        <!-- Carousel navigation buttons -->
-        <button class="carousel-prev">Prev</button>
-        <button class="carousel-next">Next</button>
-        <!-- Carousel pagination -->
-        <div class="carousel-pagination">
-          <button class="carousel-pagination-item carousel-pagination-item-active"></button>
-          <button class="carousel-pagination-item"></button>
-          <button class="carousel-pagination-item"></button>
-          <!-- Add more pagination items here -->
-        </div>
-      </div>
+      </section>
+
       <section class="svyatyni-single-content-container">
         <div class="svyatyni-single-content-heading-container">
           <h2 class="svyatyni-single-content-title">
@@ -75,6 +83,24 @@
           <p class="svyatyni-single-content-subtitle">
             пресвитер Георгие-Афипский (1861-1918)
           </p>
+        </div>
+
+        <div class="svyatyni-single-content">
+          <div class="svyatyni-single-content-tab-container">
+            <ul class="tab-btn-container" role="list">
+              <li>
+                <a href="#КОВЧЕГ" class="tab-btn tabBtnActive" role="button" aria-selected="true">
+                  КОВЧЕГ С ЧАСТИЦАМИ МОЩЕЙ СВЯТОГО АЛЕКСАНДРА ФЛЕГИНСКОГО
+                </a>
+              </li>
+
+              <li>
+                <a href="#КОВЧЕГ" class="tab-btn tabBtnActive" role="button">
+                  ИКОНА СВЯЩЕННОМУЧЕНИКА АЛЕКСАНДРА ФЛЕГИНСКОГО
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <!-- HERO SECTION -->

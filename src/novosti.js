@@ -60,28 +60,52 @@ window.addEventListener('scroll', handleScroll);
 scrollUpBtn.addEventListener('click', scrollToTop);
 
 
-
+/**
+ * Carousel
+ */
 let currentIndex = 0;
 const carouselItemCount = carouselItems.length;
 
+// Set the auto-play interval
+let autoPlayInterval = setInterval(() => {
+  currentIndex = (currentIndex + 1) % carouselItemCount;
+  updateCarousel();
+}, 5000); // Auto-play every 5 seconds
+
 carouselNavPrev.addEventListener('click', () => {
+  clearInterval(autoPlayInterval); // Stop auto-play when navigation button is clicked
   currentIndex = (currentIndex - 1 + carouselItemCount) % carouselItemCount;
   updateCarousel();
+  
+  autoPlayInterval = setInterval(() => {
+    currentIndex = (currentIndex + 1) % carouselItemCount;
+    updateCarousel();
+  }, 5000); // Restart auto-play
 });
 
 carouselNavNext.addEventListener('click', () => {
+  clearInterval(autoPlayInterval); // Stop auto-play when navigation button is clicked
   currentIndex = (currentIndex + 1) % carouselItemCount;
   updateCarousel();
+  
+  autoPlayInterval = setInterval(() => {
+    currentIndex = (currentIndex + 1) % carouselItemCount;
+    updateCarousel();
+  }, 5000); // Restart auto-play
 });
 
 carouselPaginationItems.forEach((item, index) => {
   item.addEventListener('click', () => {
+    clearInterval(autoPlayInterval); // Stop auto-play when pagination item is clicked
     currentIndex = index;
     updateCarousel();
+
+    autoPlayInterval = setInterval(() => {
+      currentIndex = (currentIndex + 1) % carouselItemCount;
+      updateCarousel();
+    }, 5000); // Restart auto-play
   });
 });
-
-
 
 function updateCarousel() {
   carouselItems.forEach((item, index) => {
@@ -100,7 +124,6 @@ function updateCarousel() {
 
   carouselInner.style.transform = `translateX(${currentIndex * -100}%)`;
 }
-
 
 /**
  * Get all words from news single content texts and update word count
