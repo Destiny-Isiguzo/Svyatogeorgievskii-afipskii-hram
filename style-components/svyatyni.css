@@ -133,11 +133,58 @@
    display: flex;
    flex-direction: column;
    gap: .5rem;
-   margin-bottom: 3rem;
+   margin-bottom: 2.5rem;
 }
 
 .svyatyni-single-content-title {
    color: var(--title-color);
    font-size: var(--fs-news-single-title);
    font-family: var(--ff-heading);
+}
+
+.tab-btn-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: clamp(0.5rem, 0.3768rem + 0.5258vw, 0.85rem);
+   margin-bottom: clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem);
+}
+
+.tab-btn {
+   border: 1px solid rgba(0 0 0 / .3);
+   border-radius: var(--btn-border-radius);
+   color: var(--text-color);
+   padding: clamp(0.35rem, 0.3324rem + 0.0751vw, 0.4rem) 
+            clamp(0.55rem, 0.5148rem + 0.1502vw, 0.65rem);
+   font-size: clamp(0.85rem, 0.8324rem + 0.0751vw, 0.9rem);
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   width: clamp(10rem, 6.4789rem + 15.0235vw, 20rem);
+}
+
+.tab-btn.tabBtnActive {
+   background-color: var(--btn-bg);
+   border: 1px solid var(--btn-bg);
+   color: var(--white-color);
+}
+
+.tab-content {
+   display: none;
+}
+
+.tab-content.tabContentActive {
+   display: block;
+}
+
+.tab-content-wrapper {
+   display: flex;
+   flex-direction: column;
+   row-gap: 1.5rem;
+}
+
+.tab-content-image {
+   border-radius: var(--border-radius);
+   width: 100%;
+   height: clamp(18.5rem, 11.8099rem + 28.5446vw, 37.5rem);
+   object-fit: cover;
 }

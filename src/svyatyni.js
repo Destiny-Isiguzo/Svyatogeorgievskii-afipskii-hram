@@ -8,6 +8,10 @@ const carouselContainer = document.querySelector('.carousel-container');
 const carouselInner = document.querySelector('.carousel-inner');
 const carouselItems = document.querySelectorAll('.carousel-item');
 const paginationItems = document.querySelectorAll('.carousel-pagination-item');
+const tabBtnContainer = document.querySelector('.tab-btn-container'); 
+const tabContentContainer = document.querySelector('.tab-content-container'); 
+const tabBtns = tabBtnContainer.querySelectorAll('.tab-btn'); 
+const tabContents = tabContentContainer.querySelectorAll('.tab-content');
 
 
 /**
@@ -98,3 +102,18 @@ function updateCarousel() {
 
 // Initialize the carousel
 updateCarousel();
+
+
+tabBtns.forEach((btn, index) => {
+   btn.addEventListener('click', (e) => {
+     e.preventDefault();
+ 
+     // Remove active class from all buttons and contents
+     tabBtns.forEach((btn) => btn.classList.remove('tabBtnActive'));
+     tabContents.forEach((content) => content.classList.remove('tabContentActive'));
+ 
+     // Add active class to the current button and content
+     btn.classList.add('tabBtnActive');
+     tabContents[index].classList.add('tabContentActive');
+   });
+});

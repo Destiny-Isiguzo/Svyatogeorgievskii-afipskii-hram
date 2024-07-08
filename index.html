@@ -1,30 +1,32 @@
 <!doctype html>
 <html lang="ru-RU">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta 
-      name="description" 
-      content="Добро пожаловать на официальный сайт Свято-Георгиевского храма, пгт. Афипского."
-    />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="src/images/favicon-white.png">
-    
-    <!-- Fontawesome icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Добро пожаловать на официальный сайт Свято-Георгиевского храма, пгт. Афипского." />
 
-    <link rel="stylesheet" href="style-components/resets.css">
-    <link rel="stylesheet" href="style-components/style.css">
-    <link rel="stylesheet" href="style-components/header.css">
-    <link rel="stylesheet" href="style-components/hero.css">
-    <link rel="stylesheet" href="style-components/schedule.css">
-    <link rel="stylesheet" href="style-components/news.css">
-    <link rel="stylesheet" href="style-components/contact.css">
-    <link rel="stylesheet" href="style-components/footer.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="src/images/favicon-white.png">
 
-    <title>Свято-Георгиевский храм | пгт. Афипского</title>
-  </head>
+  <!-- Fontawesome icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" 
+  />
+
+  <link rel="stylesheet" href="style-components/resets.css">
+  <link rel="stylesheet" href="style-components/style.css">
+  <link rel="stylesheet" href="style-components/header.css">
+  <link rel="stylesheet" href="style-components/hero.css">
+  <link rel="stylesheet" href="style-components/schedule.css">
+  <link rel="stylesheet" href="style-components/news.css">
+  <link rel="stylesheet" href="style-components/contact.css">
+  <link rel="stylesheet" href="style-components/footer.css">
+
+  <title>Свято-Георгиевский храм | пгт. Афипского</title>
+</head>
+
   <body>
     <div class="preloader">
       <div class="preloader-spinner"></div>
@@ -36,7 +38,8 @@
 
       <a href="index.html" class="logo-container" title="Логотип" aria-label="Логотип">
         <figure>
-          <img src="src/images/logo.png" loading="eager" alt="Логотип Свято-Георгиевского храма, пгт. Афипского" class="logo-image" />
+          <img src="src/images/logo.png" loading="eager" alt="Логотип Свято-Георгиевского храма, пгт. Афипского"
+            class="logo-image" />
         </figure>
       </a>
 
@@ -71,7 +74,9 @@
           <h1 class="hero-title">Святой Великомученик и Победоносец Георгий, моли Бога o нас!</h1>
 
           <p class="hero-text-desc">
-            "Взбранному воеводе и Победоносцу Георгию составим похвалу, яко ходатаю нашему и скорому помощнику: ты же, святый великомучениче, яко имеяй дерзновение ко Господу, от всяких нас бед свободи, да зовем ти: Радуйся, Георгие, великий Победоносче"!
+            "Взбранному воеводе и Победоносцу Георгию составим похвалу, яко ходатаю нашему и скорому помощнику: ты же,
+            святый великомучениче, яко имеяй дерзновение ко Господу, от всяких нас бед свободи, да зовем ти: Радуйся,
+            Георгие, великий Победоносче"!
           </p>
 
           <a href="#raspisanie-bogosluzhenii" class="hero-btn">
@@ -85,20 +90,20 @@
       <!-- HERO SECTION -->
 
       <!-- <iframe 
-        src="https://www.youtube.com/embed/KbNEtsvhNWE" 
-        title="Храм Георгия Победоносца. пгт. Афипского" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" 
-        allow="fullscreen">
-      </iframe> -->
+          src="https://www.youtube.com/embed/KbNEtsvhNWE" 
+          title="Храм Георгия Победоносца. пгт. Афипского" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allow="fullscreen">
+        </iframe> -->
 
       <section class="schedule-section" id="raspisanie-bogosluzhenii" aria-label="Раздел Расписание богослужений">
         <div class="schedule-heading-container">
           <h2 class="schedule-title">Расписание богослужений</h2>
-          
+
           <p class="schedule-subtitle">
-            Седмица 2-я по Пятидесятнице. Апостольский пост. 
+            Седмица 2-я по Пятидесятнице. Апостольский пост.
           </p>
 
           <p class="schedule-current-day-time" id="schedule-current-day-time"></p>
@@ -112,12 +117,12 @@
 
             <ul class="schedule-card-event">
               <li>
-                Владимирской иконы Божией Матери (празднество установлено в память спасения Москвы от нашествия хана Ахмата в 1480 г.)
+                Владимирской иконы Божией Матери (празднество установлено в память спасения Москвы от нашествия хана
+                Ахмата в 1480 г.)
               </li>
             </ul>
 
-            <p 
-              class="schedule-card-text">
+            <p class="schedule-card-text">
               15:00 &#8212; Вечернее Богослужение. (Исповедь)
             </p>
           </div>
@@ -129,7 +134,8 @@
 
             <ul class="schedule-card-event">
               <li>
-                Владимирской иконы Божией Матери (празднество установлено в память спасения Москвы от нашествия хана Ахмата в 1480 г.)
+                Владимирской иконы Божией Матери (празднество установлено в память спасения Москвы от нашествия хана
+                Ахмата в 1480 г.)
               </li>
             </ul>
 
@@ -146,8 +152,8 @@
             </h4>
 
             <!-- <ul class="schedule-card-event">
-              <li>Святая Троица. Пятидесятница.</li>
-            </ul> -->
+                <li>Святая Троица. Пятидесятница.</li>
+              </ul> -->
 
             <p class="schedule-card-text">
               15:00 &#8212; Всенощное бдение. (Исповедь)
@@ -180,38 +186,26 @@
         </div>
 
         <div class="news-card-list-tab-container">
-          <ul class="tab-btn-container" role="list">
-            <li>
-              <a href="#glavnyye" role="button" class="tab-btn tabBtnActive">Главные</a>
-            </li>
+          <div class="tab-btn-container" role="list">
+            <a href="#glavnyye" role="button" class="tab-btn tabBtnActive">Главные</a>
 
-            <li>
-              <a href="#masterskaya" role="button" class="tab-btn">Мастерская</a>
-            </li>
+            <a href="#masterskaya" role="button" class="tab-btn">Мастерская</a>
 
-            <!-- <li>
-              <a href="#khram" role="button" class="tab-btn">Храм</a>
-            </li> -->
+            <!-- <a href="#khram" role="button" class="tab-btn">Храм</a> -->
 
-            <li>
-              <a href="#podderzhka-SVO" role="button" class="tab-btn">Поддержка СВО</a>
-            </li>
+            <a href="#podderzhka-SVO" role="button" class="tab-btn">Поддержка СВО</a>
 
-            <li>
-              <a href="#voskresnaya-shkola" role="button" class="tab-btn">Воскресная школа</a>
-            </li>
+            <!-- <a href="#voskresnaya-shkola" role="button" class="tab-btn">Воскресная школа</a> -->
 
-            <li>
-              <a href="#sobytiya" role="button" class="tab-btn">События</a>
-            </li>
-          </ul>
-  
+            <!-- <a href="#sobytiya" role="button" class="tab-btn">События</a> -->
+          </div>
+
           <div class="tab-content-container">
             <div id="glavnyye" class="tab-content tab-content1 tabContentActive">
               <div class="news-card-list-container">
                 <article class="news-card">
                   <img src="src/images/news-img8.jpg" alt="Фото волонтеров храма" loading="eager" class="news-card-image">
-  
+
                   <div class="news-card-info-container">
                     <p class="news-card-date">
                       <time datetime="2024-07-2">2.07.2024</time>
@@ -222,13 +216,14 @@
                       <p class="news-card-views-num"></p>
                     </div>
                   </div>
-                  
+
                   <h4 class="news-card-title">Плащ от дронов</h4>
-        
+
                   <p class="news-card-text">
-                    Новое изделие - противотепловизионный плащ - запустили в производство искусницы мастерской Свято-Георгиевского храма.
+                    Новое изделие - противотепловизионный плащ - запустили в производство искусницы мастерской
+                    Свято-Георгиевского храма.
                   </p>
-  
+
                   <a href="novosti/cgh05.html" class="news-card-btn">
                     Читать дальше
                     <i class="fa-solid fa-arrow-right"></i>
@@ -237,7 +232,7 @@
 
                 <article class="news-card">
                   <img src="src/images/news-img21.jpg" alt="Фото семинара" loading="eager" class="news-card-image">
-  
+
                   <div class="news-card-info-container">
                     <p class="news-card-date">
                       <time datetime="2024-07-2">2.07.2024</time>
@@ -248,13 +243,13 @@
                       <p class="news-card-views-num"></p>
                     </div>
                   </div>
-                  
+
                   <h4 class="news-card-title">Поезд творческих идей</h4>
-        
+
                   <p class="news-card-text">
                     Сегодня 2.07.24 настоятель Свято-Георгиевского храма протоиерей Андрей
                   </p>
-    
+
                   <a href="novosti/cgh04.html" class="news-card-btn">
                     Читать дальше
                     <i class="fa-solid fa-arrow-right"></i>
@@ -262,8 +257,9 @@
                 </article>
 
                 <article class="news-card">
-                  <img src="src/images/news-img17.jpg" alt="Фото визита митрополита Василия" loading="eager" class="news-card-image">
-  
+                  <img src="src/images/news-img17.jpg" alt="Фото визита митрополита Василия" loading="eager"
+                    class="news-card-image">
+
                   <div class="news-card-info-container">
                     <p class="news-card-date">
                       <time datetime="2024-06-27">27.06.2024</time>
@@ -274,13 +270,13 @@
                       <p class="news-card-views-num"></p>
                     </div>
                   </div>
-                  
+
                   <h4 class="news-card-title">Северский район посетил митрополит Екатеринодарский и Кубанский Василий</h4>
-        
+
                   <p class="news-card-text">
                     На встрече в посёлке Афипском обсудили возможность строительства православной
                   </p>
-    
+
                   <a href="novosti/cgh03.html" class="news-card-btn">
                     Читать дальше
                     <i class="fa-solid fa-arrow-right"></i>
@@ -289,70 +285,70 @@
               </div>
 
               <!-- <div class="news-card-list-container accordion-container">
-                <article class="news-card">
-                  <img src="src/images/news-img4.jpg" alt="Фото волонтеров храма" loading="eager" class="news-card-image">
-  
-                  <div class="news-card-info-container">
-                    <p class="news-card-date">
-                      <time datetime="2024-06-27">27.06.2024</time>
-                    </p>
-
-                    <div class="news-card-views-container">
-                      <i class="fa-solid fa-eye"></i>
-                      <p class="news-card-views-num"></p>
-                    </div>
-                  </div>
-                  
-                  <h4 class="news-card-title">Эта война коснется каждого</h4>
-        
-                  <p class="news-card-text">
-                    В этом месяце на помощь нашим бойцам СВО поступило 112 600р. Из них безналичными 77 300р. и наличными 35 300р.
-                  </p>
-  
-                  <a href="novosti/cgh01.html" class="news-card-btn">
-                    Читать дальше
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </a>
-                </article>
-
-                <article class="news-card">
-                  <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" loading="eager" class="news-card-image">
-  
-                  <div class="news-card-info-container">
-                    <p class="news-card-date">
-                      <time datetime="2024-06-21">21.06.2024</time>
-                    </p>
-
-                    <div class="news-card-views-container">
-                      <i class="fa-solid fa-eye"></i>
-                      <p class="news-card-views-num"></p>
-                    </div>
-                  </div>
-                  
-                  <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
-        
-                  <p class="news-card-text">
-                    Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы
-                  </p>
+                  <article class="news-card">
+                    <img src="src/images/news-img4.jpg" alt="Фото волонтеров храма" loading="eager" class="news-card-image">
     
-                  <a href="novosti/cgh02.html" class="news-card-btn">
-                    Читать дальше
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </a>
-                </article>
-              </div> -->
+                    <div class="news-card-info-container">
+                      <p class="news-card-date">
+                        <time datetime="2024-06-27">27.06.2024</time>
+                      </p>
+
+                      <div class="news-card-views-container">
+                        <i class="fa-solid fa-eye"></i>
+                        <p class="news-card-views-num"></p>
+                      </div>
+                    </div>
+                    
+                    <h4 class="news-card-title">Эта война коснется каждого</h4>
+          
+                    <p class="news-card-text">
+                      В этом месяце на помощь нашим бойцам СВО поступило 112 600р. Из них безналичными 77 300р. и наличными 35 300р.
+                    </p>
+    
+                    <a href="novosti/cgh01.html" class="news-card-btn">
+                      Читать дальше
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </article>
+
+                  <article class="news-card">
+                    <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" loading="eager" class="news-card-image">
+    
+                    <div class="news-card-info-container">
+                      <p class="news-card-date">
+                        <time datetime="2024-06-21">21.06.2024</time>
+                      </p>
+
+                      <div class="news-card-views-container">
+                        <i class="fa-solid fa-eye"></i>
+                        <p class="news-card-views-num"></p>
+                      </div>
+                    </div>
+                    
+                    <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
+          
+                    <p class="news-card-text">
+                      Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы
+                    </p>
+      
+                    <a href="novosti/cgh02.html" class="news-card-btn">
+                      Читать дальше
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </article>
+                </div> -->
 
               <!-- <button type="button" class="show-more-btn">
-                Показать еще
-              </button> -->
+                  Показать еще
+                </button> -->
             </div>
             <!-- Главные -->
-  
+
             <div id="masterskaya" class="tab-content tab-content2">
               <div class="news-card-list-container">
                 <article class="news-card">
                   <img src="src/images/news-img8.jpg" alt="Фото волонтеров храма" loading="eager" class="news-card-image">
-  
+
                   <div class="news-card-info-container">
                     <p class="news-card-date">
                       <time datetime="2024-07-2">2.07.2024</time>
@@ -363,13 +359,14 @@
                       <p class="news-card-views-num"></p>
                     </div>
                   </div>
-                  
+
                   <h4 class="news-card-title">Плащ от дронов</h4>
-        
+
                   <p class="news-card-text">
-                    Новое изделие - противотепловизионный плащ - запустили в производство искусницы мастерской Свято-Георгиевского храма.
+                    Новое изделие - противотепловизионный плащ - запустили в производство искусницы мастерской
+                    Свято-Георгиевского храма.
                   </p>
-  
+
                   <a href="novosti/cgh05.html" class="news-card-btn">
                     Читать дальше
                     <i class="fa-solid fa-arrow-right"></i>
@@ -378,7 +375,7 @@
 
                 <article class="news-card">
                   <img src="src/images/news-img14.jpg" alt="Фото волонтеров храма" loading="lazy" class="news-card-image">
-  
+
                   <div class="news-card-info-container">
                     <p class="news-card-date">
                       <time datetime="2024-06-27">27.06.2024</time>
@@ -389,13 +386,14 @@
                       <p class="news-card-views-num"></p>
                     </div>
                   </div>
-                  
+
                   <h4 class="news-card-title">Эта война коснется каждого</h4>
-        
+
                   <p class="news-card-text">
-                    В этом месяце на помощь нашим бойцам СВО поступило 112 600р. Из них безналичными 77 300р. и наличными 35 300р.
+                    В этом месяце на помощь нашим бойцам СВО поступило 112 600р. Из них безналичными 77 300р. и наличными
+                    35 300р.
                   </p>
-  
+
                   <a href="novosti/cgh01.html" class="news-card-btn">
                     Читать дальше
                     <i class="fa-solid fa-arrow-right"></i>
@@ -404,7 +402,7 @@
 
                 <article class="news-card">
                   <img src="src/images/news-img1.jpg" alt="Фото волонтеров храма" loading="lazy" class="news-card-image">
-  
+
                   <div class="news-card-info-container">
                     <p class="news-card-date">21.06.2024</p>
 
@@ -413,13 +411,14 @@
                       <p class="news-card-views-num"></p>
                     </div>
                   </div>
-                  
+
                   <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
-        
+
                   <p class="news-card-text">
-                    Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы
+                    Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на
+                    22725 р. Ожидаем доставку из Москвы
                   </p>
-    
+
                   <a href="novosti/cgh02.html" class="news-card-btn">
                     Читать дальше
                     <i class="fa-solid fa-arrow-right"></i>
@@ -428,34 +427,35 @@
               </div>
             </div>
             <!-- Мастерская -->
-  
+
             <!-- <div id="khram" class="tab-content tab-content3">
-              <div class="news-card-list-container">
-                <article class="news-card">
-                  <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" loading="lazy" class="news-card-image">
-  
-                  <p class="news-card-date">23.06.2024</p>
-                  
-                  <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
-        
-                  <p class="news-card-text">
-                    Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы
-                  </p>
+                <div class="news-card-list-container">
+                  <article class="news-card">
+                    <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" loading="lazy" class="news-card-image">
     
-                  <a href="" class="news-card-btn">
-                    Читать дальше
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </a>
-                </article>
-              </div>
-            </div> -->
+                    <p class="news-card-date">23.06.2024</p>
+                    
+                    <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
+          
+                    <p class="news-card-text">
+                      Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы
+                    </p>
+      
+                    <a href="" class="news-card-btn">
+                      Читать дальше
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </article>
+                </div>
+              </div> -->
             <!-- Храм -->
-  
+
             <div id="podderzhka-SVO" class="tab-content tab-content4">
               <div class="news-card-list-container">
                 <article class="news-card">
-                  <img src="src/images/news-img15.jpg" alt="Поддержка СВО" loading="lazy" class="news-card-image support-CBO-image">
-  
+                  <img src="src/images/news-img15.jpg" alt="Поддержка СВО" loading="lazy"
+                    class="news-card-image support-CBO-image">
+
                   <div class="news-card-info-container">
                     <p class="news-card-date">
                       <time datetime="2024-06-29">29.06.2024</time>
@@ -466,64 +466,64 @@
                       <p class="news-card-views-num"></p>
                     </div>
                   </div>
-                  
+
                   <!-- <h4 class="news-card-title">Эта война коснется каждого</h4> -->
-        
+
                   <!-- <p class="news-card-text">
-                    В этом месяце на помощь нашим бойцам СВО поступило 112 600р. Из них безналичными 77 300р. и наличными 35 300р.
-                  </p> -->
-  
+                      В этом месяце на помощь нашим бойцам СВО поступило 112 600р. Из них безналичными 77 300р. и наличными 35 300р.
+                    </p> -->
+
                   <!-- <a href="novosti/cgh01.html" class="news-card-btn">
-                    Читать дальше
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </a> -->
+                      Читать дальше
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a> -->
                 </article>
               </div>
             </div>
             <!-- Поддержка СВО -->
-  
+
             <!-- <div id="voskresnaya-shkola" class="tab-content tab-content5">
-              <div class="news-card-list-container">
-                <article class="news-card">
-                  <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" loading="lazy" class="news-card-image">
-  
-                  <p class="news-card-date">23.06.2024</p>
-                  
-                  <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
-        
-                  <p class="news-card-text">
-                    Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы
-                  </p>
+                <div class="news-card-list-container">
+                  <article class="news-card">
+                    <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" loading="lazy" class="news-card-image">
     
-                  <a href="" class="news-card-btn">
-                    Читать дальше
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </a>
-                </article>
-              </div>
-            </div> -->
+                    <p class="news-card-date">23.06.2024</p>
+                    
+                    <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
+          
+                    <p class="news-card-text">
+                      Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы
+                    </p>
+      
+                    <a href="" class="news-card-btn">
+                      Читать дальше
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </article>
+                </div>
+              </div> -->
             <!-- voskresnaya shkola -->
-  
+
             <!-- <div id="tab-6" class="tab-content tab-content6">
-              <div class="news-card-list-container">
-                <article class="news-card">
-                  <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" loading="lazy" class="news-card-image">
-  
-                  <p class="news-card-date">23.06.2024</p>
-                  
-                  <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
-        
-                  <p class="news-card-text">
-                    Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы
-                  </p>
+                <div class="news-card-list-container">
+                  <article class="news-card">
+                    <img src="src/images/news-img.jpg" alt="Фото волонтеров храма" loading="lazy" class="news-card-image">
     
-                  <a href="" class="news-card-btn">
-                    Читать дальше
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </a>
-                </article>
-              </div>
-            </div> -->
+                    <p class="news-card-date">23.06.2024</p>
+                    
+                    <h4 class="news-card-title">Шьем, плетем, ждем вас</h4>
+          
+                    <p class="news-card-text">
+                      Братья и сестры, благодаря вашей помощи нам удалось закупить дюспо для противотепловизионных одеял на 22725 р. Ожидаем доставку из Москвы
+                    </p>
+      
+                    <a href="" class="news-card-btn">
+                      Читать дальше
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </article>
+                </div>
+              </div> -->
             <!-- sobytiya -->
           </div>
         </div>
@@ -562,4 +562,5 @@
 
     <script src="src/main.js" type="text/javascript"></script>
   </body>
+
 </html>

@@ -32,10 +32,6 @@
    margin-bottom: clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem);
 }
 
-.tab-btn-container li {
-   margin-bottom: .7rem;
-}
-
 .tab-btn {
    border: 1px solid rgba(0 0 0 / .3);
    border-radius: var(--btn-border-radius);
@@ -337,7 +333,7 @@
 .news-single-content-text-container {
    display: flex;
    flex-direction: column;
-   row-gap: 1.7rem;
+   row-gap: 1.5rem;
 }
 
 .new-single-content-image {
