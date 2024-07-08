@@ -34,26 +34,28 @@
 
 .schedule-cards-container {
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(clamp(20rem, 18.2394rem + 7.5117vw, 25rem), 1fr));
-   gap: 3.5rem;
-   /* max-width: 53rem;
-   margin: auto; */
+   /* grid-template-columns: repeat(auto-fit, minmax(clamp(20rem, 18.2394rem + 7.5117vw, 25rem), 1fr)); */
+   gap: 1.5rem;
+   max-width: 53rem;
+   margin: auto;
 }
 
 .schedule-card {
+   border: .7px solid rgba(0 0 0 / .15);
+   border-radius: var(--btn-border-radius);
    display: grid;
    gap: 1.1rem;
-   /* padding-bottom: 1rem; */
+   padding: 1.2rem 1rem;
 }
 
 .schedule-card-day {
    display: none;
 }
 
-.schedule-card-event,
+/* .schedule-card-event,
 .schedule-card-text {
    padding-left: clamp(1rem, 0.9296rem + 0.3005vw, 1.2rem);
-}
+} */
 
 .schedule-card-event li {
    list-style-position: inside;

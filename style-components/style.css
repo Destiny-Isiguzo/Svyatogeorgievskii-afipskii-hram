@@ -108,7 +108,7 @@ body {
 iframe {
    display: block;
    padding-inline: var(--padding-inline);
-   padding-bottom: 3rem;
+   padding-bottom: 4rem;
    margin: auto;
    height: clamp(17rem, 12.4225rem + 19.5305vw, 30rem);
    max-width: 70rem;
