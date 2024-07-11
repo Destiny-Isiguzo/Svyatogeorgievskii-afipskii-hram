@@ -123,7 +123,7 @@
 
 .accordion-container {
    max-height: 0;
-   margin-top: 1.3rem;
+   margin-top: 1.7rem;
    overflow-y: hidden;
    transition: max-height .4s ease;
 }
