@@ -62,46 +62,46 @@ scrollUpBtn.addEventListener('click', scrollToTop);
 */
 
 // Set the current slide index
-let currentSlide = 0;
+// let currentSlide = 0;
 
-// Set the auto-play interval
-const autoPlayInterval = setInterval(() => {
-  currentSlide = (currentSlide + 1) % carouselItems.length;
-  updateCarousel();
-}, 4000);
+// // Set the auto-play interval
+// const autoPlayInterval = setInterval(() => {
+//   currentSlide = (currentSlide + 1) % carouselItems.length;
+//   updateCarousel();
+// }, 7000);
 
-// Update the carousel when the navigation buttons are clicked
-document.querySelector('.carousel-prev').addEventListener('click', () => {
-  currentSlide = (currentSlide - 1 + carouselItems.length) % carouselItems.length;
-  updateCarousel();
-});
+// // Update the carousel when the navigation buttons are clicked
+// document.querySelector('.carousel-prev').addEventListener('click', () => {
+//   currentSlide = (currentSlide - 1 + carouselItems.length) % carouselItems.length;
+//   updateCarousel();
+// });
 
-document.querySelector('.carousel-next').addEventListener('click', () => {
-  currentSlide = (currentSlide + 1) % carouselItems.length;
-  updateCarousel();
-});
+// document.querySelector('.carousel-next').addEventListener('click', () => {
+//   currentSlide = (currentSlide + 1) % carouselItems.length;
+//   updateCarousel();
+// });
 
-// Update the carousel when a pagination item is clicked
-paginationItems.forEach((item, index) => {
-   item.addEventListener('click', () => {
-      currentSlide = index;
-      updateCarousel();
-   });
-});
+// // Update the carousel when a pagination item is clicked
+// paginationItems.forEach((item, index) => {
+//    item.addEventListener('click', () => {
+//       currentSlide = index;
+//       updateCarousel();
+//    });
+// });
 
-// Update the carousel function
-function updateCarousel() {
-  // Update the carousel inner wrapper transform
-  carouselInner.style.transform = `translateX(${currentSlide * -100}%)`;
+// // Update the carousel function
+// function updateCarousel() {
+//   // Update the carousel inner wrapper transform
+//   carouselInner.style.transform = `translateX(${currentSlide * -100}%)`;
 
-  // Update the pagination active state
-   paginationItems.forEach((item, index) => {
-      item.classList.toggle('carousel-pagination-item-active', index === currentSlide);
-   });
-}
+//   // Update the pagination active state
+//    paginationItems.forEach((item, index) => {
+//       item.classList.toggle('carousel-pagination-item-active', index === currentSlide);
+//    });
+// }
 
-// Initialize the carousel
-updateCarousel();
+// // Initialize the carousel
+// updateCarousel();
 
 
 tabBtns.forEach((btn, index) => {
