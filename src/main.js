@@ -37,10 +37,10 @@ const year = document.querySelector('.year');
 /**
  * Show header and main elements after load
 */
-function showHeaderAndMain() {
-  header.style.opacity = '1';
-  main.style.opacity = '1';
-}
+// function showHeaderAndMain() {
+//   header.style.opacity = '1';
+//   main.style.opacity = '1';
+// }
 
 /**
  * Toggle navigation menu
