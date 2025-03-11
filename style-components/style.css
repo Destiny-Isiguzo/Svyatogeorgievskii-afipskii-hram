@@ -89,8 +89,8 @@ body {
 }
 
 .main {
-   opacity: 0;
-   transition: var(--general-transition);
+   /* opacity: 0;
+   transition: var(--general-transition); */
    overflow: hidden;
 }
 

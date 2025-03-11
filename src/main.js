@@ -30,9 +30,9 @@ const year = document.querySelector('.year');
 /**
  * Add fade-out class to an element
 */
-function addFadeOutClass(element) {
-  element.classList.add('fade-out');
-}
+// function addFadeOutClass(element) {
+//   element.classList.add('fade-out');
+// }
 
 /**
  * Show header and main elements after load
